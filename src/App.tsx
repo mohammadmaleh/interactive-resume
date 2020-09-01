@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import GlobalStyle from "./GlobalStyle";
-import Background from "./components/Background";
+import Background from "./components/Background/Background";
 
 function App() {
   return (
