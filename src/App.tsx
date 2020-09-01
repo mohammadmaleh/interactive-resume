@@ -5,7 +5,7 @@ import Background from "./components/Background/Background";
 
 function App() {
   return (
-    <div>
+    <div data-test="app">
       <GlobalStyle />
       <Background />
     </div>

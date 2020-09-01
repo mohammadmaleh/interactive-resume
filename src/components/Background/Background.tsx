@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import styled from "styled-components";
-import backgroundImage from "../assets/background.jpg";
+import backgroundImage from "../../assets/background.jpg";
 interface Props {}
 interface InteractiveBackgroundProps {
   backgroundPositionX: number | string;
@@ -31,12 +31,11 @@ export default function Background({}: Props): ReactElement {
     setBackgroundPositionY(height * cb.pageY * -1 - 25);
   };
   return (
-    <div className="App">
-      <InteractiveBackground
-        onMouseMove={handleMouseMove}
-        backgroundPositionX={backgroundPositionX}
-        backgroundPositionY={backgroundPositionY}
-      />
-    </div>
+    <InteractiveBackground
+      data-test="interactive-background"
+      onMouseMove={handleMouseMove}
+      backgroundPositionX={backgroundPositionX}
+      backgroundPositionY={backgroundPositionY}
+    />
   );
 }
