@@ -18,7 +18,10 @@ describe("<App />", function () {
   it("<App /> renders children <Background/> and <GlobalStyles/>", () => {
     const wrapper = setup();
     const component = findByTestAttr(wrapper, "app");
-    expect(component.containsMatchingElement(<Background />)).toEqual(true);
-    expect(component.containsMatchingElement(<GlobalStyles />)).toEqual(true);
+    expect(
+      component.containsMatchingElement(
+        <Background backgroundPositionX={0} backgroundPositionY={0} />
+      )
+    ).toEqual(true);
   });
 });

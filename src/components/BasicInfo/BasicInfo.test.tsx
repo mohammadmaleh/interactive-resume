@@ -1,19 +1,19 @@
 import React from "react";
-import { shallow, mount, render } from "enzyme";
+import { shallow } from "enzyme";
 import { findByTestAttr } from "../../test/testUtils";
-import Background from "./Background";
+import BasicInfo from "./BasicInfo";
 const defaultProps = {
   backgroundPositionX: 0,
   backgroundPositionY: 0,
 };
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };
-  return shallow(<Background {...setupProps} />);
+  return shallow(<BasicInfo {...setupProps} />);
 };
-describe("<Background />", function () {
-  it("<Background /> exist", () => {
+describe("<BasicInfo />", function () {
+  it("<BasicInfo /> exist", () => {
     const wrapper = setup();
-    const component = findByTestAttr(wrapper, "interactive-background");
+    const component = findByTestAttr(wrapper, "basic-info");
     expect(component.length).toBe(1);
   });
 });

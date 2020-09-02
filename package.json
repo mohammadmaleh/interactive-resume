@@ -13,8 +13,10 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.1.1",
+    "styled-icons": "^10.19.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
