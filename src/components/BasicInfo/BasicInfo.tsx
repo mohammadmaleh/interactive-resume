@@ -4,7 +4,7 @@ import profilePicture from "../../assets/profile-picture.png";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
-
+import Button from "../UI/Button/Button";
 interface Props {}
 const Container = styled.div`
   padding: 60px 20px;
@@ -51,22 +51,7 @@ const MailIcon = styled(Mail)`
   color: white;
   height: 30px;
 `;
-const DownloadButton = styled.button`
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff;
-  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
-  padding: 10px 20px;
-  border-radius: 40px;
-  transition: all 0.6s ease-in-out;
-  margin-top: 30px;
-  &:hover {
-    color: #04b4e0;
-    background-color: #fff;
-    border-color: #fff;
-    cursor: pointer;
-  }
-`;
+
 export default function BasicInfo({}: Props): ReactElement {
   return (
     <Container data-test="basic-info">
@@ -79,7 +64,7 @@ export default function BasicInfo({}: Props): ReactElement {
         <LinkedInIcon />
         <MailIcon />
       </IconsContainer>
-      <DownloadButton>Download Resume!</DownloadButton>
+      <Button>Download Resume!</Button>
     </Container>
   );
 }

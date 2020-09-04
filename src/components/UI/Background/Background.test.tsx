@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount, render } from "enzyme";
-import { findByTestAttr } from "../../test/testUtils";
+import { findByTestAttr } from "../../../test/testUtils";
 import Background from "./Background";
 const defaultProps = {
   backgroundPositionX: 0,

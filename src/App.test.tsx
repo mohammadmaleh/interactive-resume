@@ -3,7 +3,7 @@ import { shallow, mount, render } from "enzyme";
 import { findByTestAttr } from "./test/testUtils";
 const defaultProps = {};
 import App from "./App";
-import Background from "./components/Background/Background";
+import Background from "./components/UI/Background/Background";
 import GlobalStyles from "./GlobalStyle";
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };

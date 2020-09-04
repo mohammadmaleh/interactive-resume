@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
 import GlobalStyle from "./GlobalStyle";
-import Background from "./components/Background/Background";
+import Background from "./components/UI/Background/Background";
 import MainContainer from "./containers/MainContainer";
 function App() {
   const [backgroundPositionX, setBackgroundPositionX] = useState(0);

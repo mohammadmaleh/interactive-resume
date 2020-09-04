@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import styled from "styled-components";
-import backgroundImage from "../../assets/background.jpg";
+import backgroundImage from "../../../assets/background.jpg";
 interface InteractiveBackgroundProps {
   backgroundPositionX: number | string;
   backgroundPositionY: number | string;
