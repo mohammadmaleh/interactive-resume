@@ -1,8 +1,9 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import BasicInfo from "../components/BasicInfo/BasicInfo";
-import RouterTest from "../components/RouterTest";
 import MainMenu from "./MainMenu";
+import Routes from "../Routes";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 interface Props {
   handleMouseMove: Function;
 }
@@ -22,21 +23,28 @@ const ChildContainer = styled.div<childContainer>`
   max-width: 1280px;
   height: 100%;
   border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
+
 export default function MainContainer({
   handleMouseMove,
 }: Props): ReactElement {
   return (
-    <Container
-      onMouseMove={(e) => {
-        handleMouseMove(e);
-      }}
-    >
-      <ChildContainer>
-        {/* <BasicInfo /> */}
-        {/* <RouterTest /> */}
-      </ChildContainer>
-      <MainMenu />
-    </Container>
+    <Router>
+      <Container
+        onMouseMove={(e) => {
+          handleMouseMove(e);
+        }}
+      >
+        <ChildContainer>
+          <BasicInfo />
+          <Routes />
+        </ChildContainer>
+
+        <MainMenu />
+      </Container>
+    </Router>
   );
 }

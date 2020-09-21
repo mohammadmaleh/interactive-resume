@@ -14,10 +14,10 @@ function App() {
   };
   return (
     <div data-test="app">
-      {/* <Background
+      <Background
         backgroundPositionX={backgroundPositionX}
         backgroundPositionY={backgroundPositionY}
-      /> */}
+      />
 
       <MainContainer handleMouseMove={handleMouseMove} />
     </div>
