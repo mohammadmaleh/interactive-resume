@@ -19,7 +19,7 @@ const Menu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 40px 0;
   align-items: center;
 `;
 const NavigationMenu = styled(Menu)`
@@ -65,15 +65,12 @@ const MainMenu = ({}: Props): ReactElement => {
       <NavigationMenu>
         <MenuIcon
           Icon={ChevronRight}
-          name={"Next"}
           handleOnClick={() => {
-            // history.push("/");
             swipePage("next");
           }}
         />
         <MenuIcon
           Icon={ChevronLeft}
-          name={"Prev"}
           handleOnClick={() => {
             swipePage("prev");
           }}

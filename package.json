@@ -11,10 +11,13 @@
     ]
   },
   "dependencies": {
+    "d3": "^6.1.1",
+    "d3-ease": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-spring": "^8.0.27",
     "styled-components": "^5.1.1",
     "styled-icons": "^10.19.0",
     "typescript": "~3.7.2"
@@ -45,6 +48,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/d3-ease": "^1.0.9",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^24.0.0",

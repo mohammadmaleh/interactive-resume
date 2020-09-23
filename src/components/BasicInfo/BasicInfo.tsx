@@ -5,6 +5,7 @@ import { Github } from "@styled-icons/boxicons-logos/Github";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
 import Button from "../UI/Button/Button";
+import { white } from "../../constants/colors";
 interface Props {}
 const Container = styled.div`
   padding: 60px 20px;
@@ -17,7 +18,7 @@ const Container = styled.div`
   height: 100%;
 `;
 const ProfileImage = styled.img`
-  border: 1px solid white;
+  border: 1px solid ${white};
   height: 150px;
   width: 150px;
   border-radius: 170px;
@@ -40,15 +41,15 @@ const IconsContainer = styled.div`
   margin-top: 30px;
 `;
 const GithubIcon = styled(Github)`
-  color: white;
+  color: ${white};
   height: 30px;
 `;
 const LinkedInIcon = styled(LinkedinSquare)`
-  color: white;
+  color: ${white};
   height: 30px;
 `;
 const MailIcon = styled(Mail)`
-  color: white;
+  color: ${white};
   height: 30px;
 `;
 

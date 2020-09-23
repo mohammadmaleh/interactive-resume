@@ -4,20 +4,27 @@ import { Home, User } from "@styled-icons/boxicons-regular";
 import { Work } from "@styled-icons/material";
 import { Blog } from "@styled-icons/fa-solid/Blog";
 import { Contact } from "@styled-icons/boxicons-solid/Contact";
+import { white, lightBlack } from "./constants/colors";
+const pagesStyle = {
+  color: white,
+  backgroundColor: lightBlack,
+  width: "100%",
+  height: "100%",
+};
 const HomePage = ({}: Object): ReactElement => (
-  <div style={{ color: "white" }}>home</div>
+  <div style={pagesStyle}>home</div>
 );
 const AboutMePage = ({}: Object): ReactElement => (
-  <div style={{ color: "white" }}>About Me</div>
+  <div style={pagesStyle}>About Me</div>
 );
 const ExperiencePage = ({}: Object): ReactElement => (
-  <div style={{ color: "white" }}>Experience</div>
+  <div style={pagesStyle}>Experience</div>
 );
 const ContactPage = ({}: Object): ReactElement => (
-  <div style={{ color: "white" }}>Contact</div>
+  <div style={pagesStyle}>Contact</div>
 );
 const BlogPage = ({}: Object): ReactElement => (
-  <div style={{ color: "white" }}>Blog</div>
+  <div style={pagesStyle}>Blog</div>
 );
 
 export const pages = [

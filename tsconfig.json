@@ -21,5 +21,13 @@
   },
   "include": [
     "src", "MenuIcon.tsx"
-  ]
+  ],
+  "linterOptions": {
+    "exclude": [
+      "src/**/**/**/*.ts",
+      "src/**/**/*.ts",
+      "src/**/*.ts",
+      "src/*.ts"
+    ]
+  }
 }
