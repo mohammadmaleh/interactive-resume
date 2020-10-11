@@ -3,8 +3,8 @@ import { shallow } from "enzyme";
 import { findByTestAttr } from "../../test/testUtils";
 import BasicInfo from "./BasicInfo";
 const defaultProps = {
-  backgroundPositionX: 0,
-  backgroundPositionY: 0,
+  mousePositionX: 0,
+  mousePositionY: 0,
 };
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };

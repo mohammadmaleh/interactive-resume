@@ -1,11 +1,11 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { animated, useSpring, useTransition } from "react-spring";
 import { white, darkBlack, blue } from "../../../constants/colors";
 import * as easings from "d3-ease";
-
+import ResumeContext from "../../../context/resume.context";
 interface MenuIconProps {
   Icon: any;
   name?: string;
@@ -23,31 +23,12 @@ const IconContainer = styled.div<IconContainerProps>`
     color: ${(props) => (props.active ? white : darkBlack)};
     z-index: 2;
   }
-  min-height: 40px;
+  min-height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-const HoverText = styled(animated.p)`
-  color: ${white};
-  padding: 10px;
-  position: absolute;
-  right: 70px;
-  top: 0;
-  z-index: -9;
-  width: 70px;
-  font-weight: 600;
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
-  background: linear-gradient(#444444, #444444);
-  border: 1px solid ${white};
-  border-right-color: transparent;
-  transform-origin: 100% 50%;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 100%;
 `;
 const IconBackground = styled(animated.div)`
   background-color: ${blue};
@@ -60,7 +41,7 @@ const IconBackground = styled(animated.div)`
   border-radius: 30px;
   width: 50px;
   height: 50px;
-  z-index: 1;
+  z-index: 0;
 `;
 const MenuIcon = ({
   Icon,
@@ -68,19 +49,9 @@ const MenuIcon = ({
   name,
   handleOnClick,
 }: MenuIconProps): ReactElement => {
+  const resumeContext = useContext(ResumeContext);
   const location = useLocation();
   const isActive = location.pathname === link;
-  const [textAnimationProps, setTextAnimationProps] = useSpring(() => ({
-    transform: "rotateY(-90deg)",
-    from: { transform: "rotateY(-90deg)" },
-    display: "none",
-    config: {
-      mass: 15,
-      tension: 500,
-      friction: 100,
-      easing: easings.easeCubic,
-    },
-  }));
   const transitions = useTransition(isActive, null, {
     from: { transform: "scale(0)" },
     enter: { transform: "scale(1)" },
@@ -88,21 +59,17 @@ const MenuIcon = ({
     config: {
       easing: easings.easeCubic,
     },
+    unique: true,
+    reset: true,
   });
   return (
     <IconContainer
       active={isActive}
       onMouseEnter={() => {
-        setTextAnimationProps({
-          transform: " rotateY(0deg)",
-          display: "block",
-        });
+        resumeContext.tracerNotification.toggleTracerNotification(true, name);
       }}
       onMouseLeave={() => {
-        setTextAnimationProps({
-          transform: "rotateY(-90deg)",
-          display: "none",
-        });
+        resumeContext.tracerNotification.toggleTracerNotification(false, name);
       }}
       onClick={() => {
         if (handleOnClick) handleOnClick();
@@ -111,13 +78,11 @@ const MenuIcon = ({
       {link && (
         <Link to={link}>
           <Icon size={30} />
-          {name && <HoverText style={textAnimationProps}>{name}</HoverText>}
         </Link>
       )}
       {!link && (
         <div>
           <Icon size={30} />
-          {name && <HoverText style={textAnimationProps}>{name}</HoverText>}
         </div>
       )}
 
