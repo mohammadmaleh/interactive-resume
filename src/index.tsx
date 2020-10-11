@@ -4,6 +4,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import GlobalStyles from "./GlobalStyle";
 import "./index.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />

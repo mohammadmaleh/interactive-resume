@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useContext } from "react";
 import styled from "styled-components";
 import profilePicture from "../../assets/profile-picture.png";
 import { Github } from "@styled-icons/boxicons-logos/Github";
@@ -6,7 +6,15 @@ import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
 import Button from "../UI/Button/Button";
 import { white } from "../../constants/colors";
+import ResumeContext from "../../context/resume.context";
+
 interface Props {}
+interface IconContainerProps {
+  notificationText: string;
+}
+const IconContainerDiv = styled.div`
+  cursor: pointer;
+`;
 const Container = styled.div`
   padding: 60px 20px;
   display: flex;
@@ -52,20 +60,43 @@ const MailIcon = styled(Mail)`
   color: ${white};
   height: 30px;
 `;
-
+function IconContainer(
+  props: React.PropsWithChildren<IconContainerProps>
+): ReactElement {
+  const resumeContext = useContext(ResumeContext);
+  const { toggleTracerNotification } = resumeContext.tracerNotification;
+  const { notificationText } = props;
+  return (
+    <IconContainerDiv
+      onMouseEnter={() => {
+        toggleTracerNotification(true, notificationText);
+      }}
+      onMouseLeave={() => {
+        toggleTracerNotification(false, notificationText);
+      }}
+    >
+      {props.children}
+    </IconContainerDiv>
+  );
+}
 export default function BasicInfo({}: Props): ReactElement {
   return (
     <Container data-test="basic-info">
       <ProfileImage src={profilePicture} />
       <Name>MOHAMMAD AL MALEH</Name>
       <JobDescription>Senior Frontend Developer</JobDescription>
-
       <IconsContainer>
-        <GithubIcon />
-        <LinkedInIcon />
-        <MailIcon />
+        <IconContainer notificationText={"Checkout my Github Account"}>
+          <GithubIcon />
+        </IconContainer>
+        <IconContainer notificationText={"Message me on LinkedIn"}>
+          <LinkedInIcon />
+        </IconContainer>
+        <IconContainer notificationText={"Send me an email"}>
+          <MailIcon />
+        </IconContainer>
       </IconsContainer>
-      <Button>Download Resume!</Button>
+      {/*<Button>Download Resume!</Button>*/}
     </Container>
   );
 }

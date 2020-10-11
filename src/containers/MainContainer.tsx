@@ -4,9 +4,8 @@ import BasicInfo from "../components/BasicInfo/BasicInfo";
 import MainMenu from "./MainMenu";
 import Routes from "../Routes";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
-interface Props {
-  handleMouseMove: Function;
-}
+import ResumeContext from "../context/resume.context";
+interface MainContainerProps {}
 interface containerProps {}
 interface childContainer {}
 const Container = styled.div<containerProps>`
@@ -28,23 +27,26 @@ const ChildContainer = styled.div<childContainer>`
   justify-content: flex-start;
 `;
 
-export default function MainContainer({
-  handleMouseMove,
-}: Props): ReactElement {
+export default function MainContainer(props: MainContainerProps): ReactElement {
   return (
-    <Router>
-      <Container
-        onMouseMove={(e) => {
-          handleMouseMove(e);
-        }}
-      >
-        <ChildContainer>
-          <BasicInfo />
-          <Routes />
-        </ChildContainer>
-
-        <MainMenu />
-      </Container>
-    </Router>
+    <ResumeContext.Consumer>
+      {(context) => {
+        return (
+          <Router>
+            <Container
+              onMouseMove={(e) => {
+                context.mousePosition.handleMouseMove(e);
+              }}
+            >
+              <ChildContainer>
+                <BasicInfo />
+                <Routes />
+              </ChildContainer>
+              <MainMenu />
+            </Container>
+          </Router>
+        );
+      }}
+    </ResumeContext.Consumer>
   );
 }

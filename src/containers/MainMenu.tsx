@@ -68,12 +68,14 @@ const MainMenu = ({}: Props): ReactElement => {
           handleOnClick={() => {
             swipePage("next");
           }}
+          name={"Next"}
         />
         <MenuIcon
           Icon={ChevronLeft}
           handleOnClick={() => {
             swipePage("prev");
           }}
+          name={"Prev"}
         />
       </NavigationMenu>
     </MenuContainer>
