@@ -27,9 +27,7 @@ const SecondaryContainer = styled(animated.div)`
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
-  
-}
-`;
+  `;
 const TracerText = styled(animated.p)`
   font-size: 1.2em;
   color: ${white};

@@ -16,7 +16,7 @@ const IconContainerDiv = styled.div`
   cursor: pointer;
 `;
 const Container = styled.div`
-  padding: 60px 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

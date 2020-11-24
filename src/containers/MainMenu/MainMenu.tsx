@@ -1,9 +1,10 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
-import { pages } from "../Routes";
-import MenuIcon from "../components/hoc/MenuIcon/MenuIcon";
+import { pages } from "../../Routes";
+import MenuIcon from "../../components/hoc/MenuIcon/MenuIcon";
 import { ChevronRight, ChevronLeft } from "@styled-icons/boxicons-regular";
 import { useHistory, useLocation } from "react-router-dom";
+import { grey } from "../../constants/colors";
 interface Props {}
 const MenuContainer = styled.div`
   height: 100%;
@@ -14,7 +15,7 @@ const MenuContainer = styled.div`
 
 const Menu = styled.div`
   height: 100%;
-  background: linear-gradient(#444444, #444444);
+  background: ${grey};
   border-radius: 40px;
   display: flex;
   flex-direction: column;

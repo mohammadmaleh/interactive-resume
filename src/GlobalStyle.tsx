@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { darkBlack, white } from "./constants/colors";
+import { darkBlack, white, blue } from "./constants/colors";
 const GlobalStyle = createGlobalStyle`
 @import url(‘https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap');
 
@@ -26,6 +26,9 @@ p,a{
 }
 button:focus {
  outline: none !important;
+}
+.blue-text{
+  color:${blue}
 }
 `;
 

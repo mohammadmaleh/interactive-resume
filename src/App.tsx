@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Background from "./components/UI/Background/Background";
 import TracerNotification from "./components/TracerNotification/TracerNotification";
-import MainContainer from "./containers/MainContainer";
+import MainContainer from "./containers/MainContainer/MainContainer";
 import ResumeContext from "./context/resume.context";
+import ProjectsPage from "./containers/ProjectsPage/ProjectsPage";
 
 class App extends Component<any, any> {
   handleMouseMove = ({ clientX: x, clientY: y }: React.MouseEvent): void => {

@@ -2,31 +2,18 @@ import React, { ReactElement } from "react";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 import { Home, User } from "@styled-icons/boxicons-regular";
 import { Work } from "@styled-icons/material";
-import { Blog } from "@styled-icons/fa-solid/Blog";
+import { Javascript } from "@styled-icons/simple-icons/Javascript";
 import { Contact } from "@styled-icons/boxicons-solid/Contact";
 import { white, lightBlack } from "./constants/colors";
 import { useTransition, animated } from "react-spring";
 import * as easings from "d3-ease";
 import styled from "styled-components";
-
-const Page = styled.div`
-  color: ${white};
-  background-color: ${lightBlack};
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  position: absolute;
-  box-shadow: 9px 10px 28px -6px rgba(0, 0, 0, 0.75);
-`;
-const HomePage = ({}: Object): ReactElement => <Page>home</Page>;
-const AboutMePage = ({}: Object): ReactElement => <Page>About Me</Page>;
-const ExperiencePage = ({}: Object): ReactElement => <Page>Experience</Page>;
-const ContactPage = ({}: Object): ReactElement => <Page>Contact</Page>;
-const BlogPage = ({}: Object): ReactElement => <Page>Blog</Page>;
+import HomePage from "./containers/HomePage/HomePage";
+import AboutMePage from "./containers/AboutMePage/AboutMePage";
+import ExperiencePage from "./containers/ExperiencePage/ExperiencePage";
+import ContactPage from "./containers/ContactPage/ContactPage";
+import ProjectsPage from "./containers/ProjectsPage/ProjectsPage";
+interface Props {}
 
 export const pages = [
   {
@@ -52,10 +39,10 @@ export const pages = [
   },
   {
     id: 4,
-    name: "Blog",
-    link: "/blog",
-    icon: Blog,
-    component: BlogPage,
+    name: "Projects",
+    link: "/projects",
+    icon: Javascript,
+    component: ProjectsPage,
   },
   {
     id: 5,
@@ -65,7 +52,6 @@ export const pages = [
     component: ContactPage,
   },
 ];
-interface Props {}
 export default function Routes({}: Props): ReactElement {
   const location = useLocation();
   const pageTransition = useTransition(location, location.pathname, {
@@ -95,9 +81,7 @@ export default function Routes({}: Props): ReactElement {
   });
   const renderPages = () =>
     pages.map((page) => (
-      <Route exact key={page.id} path={page.link}>
-        {page.component}
-      </Route>
+      <Route exact key={page.id} path={page.link} component={page.component} />
     ));
   return (
     <div

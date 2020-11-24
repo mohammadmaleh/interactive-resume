@@ -1,13 +1,15 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
-import BasicInfo from "../components/BasicInfo/BasicInfo";
-import MainMenu from "./MainMenu";
-import Routes from "../Routes";
+import BasicInfo from "../../components/BasicInfo/BasicInfo";
+import MainMenu from "../MainMenu/MainMenu";
+import Routes from "../../Routes";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
-import ResumeContext from "../context/resume.context";
+import ResumeContext from "../../context/resume.context";
+import { grey } from "../../constants/colors";
 interface MainContainerProps {}
 interface containerProps {}
 interface childContainer {}
+
 const Container = styled.div<containerProps>`
   width: 100%;
   height: 100vh;
@@ -17,7 +19,7 @@ const Container = styled.div<containerProps>`
   justify-content: space-between;
 `;
 const ChildContainer = styled.div<childContainer>`
-  background: linear-gradient(#444444, #444444);
+  background: ${grey};
   width: calc(100% - 100px);
   max-width: 1280px;
   height: 100%;
