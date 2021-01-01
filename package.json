@@ -5,6 +5,10 @@
   "resolutions": {
     "styled-components": "^5"
   },
+  "engines": {
+    "npm": "6.14.9",
+    "node": "v14.15.3"
+  },
   "jest": {
     "setupFilesAfterEnv": [
       "./node_modules/jest-enzyme/lib/index.js"

@@ -91,11 +91,9 @@ import interaudi11 from "../assets/projects/interaudi/interaudi11.png";
 import interaudi3 from "../assets/projects/interaudi/interaudi3.png";
 import interaudi9 from "../assets/projects/interaudi/interaudi9.png";
 import interaudi7 from "../assets/projects/interaudi/interaudi7.png";
-import interaudi20 from "../assets/projects/interaudi/interaudi20.png";
 import interaudi2 from "../assets/projects/interaudi/interaudi2.png";
 import interaudi15 from "../assets/projects/interaudi/interaudi15.png";
 import interaudi5 from "../assets/projects/interaudi/interaudi5.png";
-import interaudi21 from "../assets/projects/interaudi/interaudi21.png";
 import interaudi19 from "../assets/projects/interaudi/interaudi19.png";
 import interaudi8 from "../assets/projects/interaudi/interaudi8.png";
 import interaudi16 from "../assets/projects/interaudi/interaudi16.png";
@@ -694,11 +692,9 @@ export const projectsData = [
       interaudi3,
       interaudi9,
       interaudi7,
-      interaudi20,
       interaudi2,
       interaudi15,
       interaudi5,
-      interaudi21,
       interaudi19,
       interaudi8,
       interaudi16,
