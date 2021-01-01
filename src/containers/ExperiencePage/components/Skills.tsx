@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import Title from "../../../components/UI/Title/Title";
 import styled from "styled-components";
 import { white, silver, blue } from "../../../constants/colors";
+import { skillsData } from "../../../constants/data";
 interface Props {}
 interface BarProps {
   percentage: number;
@@ -42,40 +43,6 @@ const Bar = styled.div<BarProps>`
   border: 2px solid ${blue};
   border-radius: 10px;
 `;
-const skillsData = [
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-  {
-    name: "web developer",
-    percentage: 90,
-  },
-];
 export default function Skills({}: Props): ReactElement {
   const renderSkills = () =>
     skillsData.map((skill) => (

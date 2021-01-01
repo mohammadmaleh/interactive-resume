@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Title from "../../../components/UI/Title/Title";
 import styled from "styled-components";
+import { professionalCareerData } from "../../../constants/data";
 import {
   grey,
   white,
@@ -73,50 +74,6 @@ const PositionAndDescription = styled.div`
     top: 25px;
   }
 `;
-const professionalCareerData = [
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-  {
-    duration: "2018 - 2020",
-    companyName: "gkTech",
-    position: "Senior Frontend Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,laudantium atque cumque at dolorem soluta reiciendis officia quastempora molestias nam! Consequuntur earum blanditiis voluptatem qui porro perferendis corrupti modi. ",
-  },
-];
 export default function ProfessionalCareer({}: Props): ReactElement {
   const renderPositions = () =>
     professionalCareerData.map((career) => (

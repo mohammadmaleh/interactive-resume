@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import { white, lightBlack } from "../../../constants/colors";
 import styled from "styled-components";
+import devices from "../../../constants/breakpoints";
 interface Props {
   children: JSX.Element[] | JSX.Element | Function;
 }
@@ -22,12 +23,17 @@ const Page = styled.div`
 `;
 const SectionContainerDiv = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-template-columns: 50% 50%;
   grid-gap: 20px;
   width: 100%;
   margin: 20px 0;
   &:first-of-type {
     margin-top: 0;
+  }
+  @media ${devices.tablet} {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 `;
 export function PageContainer({ children }: Props): ReactElement {

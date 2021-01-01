@@ -2,19 +2,36 @@ import React, { ReactElement } from "react";
 import Title from "../../../components/UI/Title/Title";
 import styled from "styled-components";
 import { SectionContainer } from "../../../components/UI/Layout/Layout";
-import { HomeAlt } from "@styled-icons/boxicons-regular/HomeAlt";
+import { ReactLogo } from "@styled-icons/fa-brands/ReactLogo";
+import { Phone } from "@styled-icons/bootstrap/Phone";
+import { DesignServices } from "@styled-icons/material-outlined/DesignServices";
+import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { blue } from "../../../constants/colors";
 interface Props {}
-const BlueIcon = styled.div`
-  svg {
-    color: ${blue};
-    width: 40px;
-  }
+
+const BlueReactLogo = styled(ReactLogo)`
+  color: ${blue};
+  width: 40px;
+`;
+const BluePhone = styled(Phone)`
+  color: ${blue};
+  width: 40px;
+`;
+const BlueDesign = styled(DesignServices)`
+  color: ${blue};
+  width: 40px;
+`;
+const BlueNode = styled(Nodejs)`
+  color: ${blue};
+  width: 40px;
 `;
 const DescriptionTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+`;
+const WhatIDoDescription = styled.p`
+  font-size: 14px;
 `;
 export default function WhatIDo({}: Props): ReactElement {
   return (
@@ -22,47 +39,41 @@ export default function WhatIDo({}: Props): ReactElement {
       <Title>What i do</Title>
       <span />
       <div>
-        <BlueIcon>
-          <HomeAlt />
-        </BlueIcon>
-        <DescriptionTitle>Title</DescriptionTitle>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero beatae
-          facilis quasi qui libero eligendi est, aperiam sint? Cumque odit animi
-          ea iste quia, natus autem. Reprehenderit laboriosam nobis possimus?
-        </p>
+        <BlueReactLogo />
+        <DescriptionTitle>Front End Development</DescriptionTitle>
+        <WhatIDoDescription>
+          My main profession and passion is to develop cutting edge technology
+          frontend projects. <br /> I'm always looking forward to learn new
+          technologies and trends
+        </WhatIDoDescription>
       </div>
       <div>
-        <BlueIcon>
-          <HomeAlt />
-        </BlueIcon>
-        <DescriptionTitle>Title</DescriptionTitle>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero beatae
-          facilis quasi qui libero eligendi est, aperiam sint? Cumque odit animi
-          ea iste quia, natus autem. Reprehenderit laboriosam nobis possimus?
-        </p>
+        <BluePhone />
+
+        <DescriptionTitle>Develop Mobile Apps</DescriptionTitle>
+        <WhatIDoDescription>
+          I have been developing mobile apps recently, using React Native,I
+          developed a very successful android app to my previous company with
+          over 1M downloads. <br />
+          and currently I'm developing a new app related to Instagram.
+        </WhatIDoDescription>
       </div>
       <div>
-        <BlueIcon>
-          <HomeAlt />
-        </BlueIcon>
-        <DescriptionTitle>Title</DescriptionTitle>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero beatae
-          facilis quasi qui libero eligendi est, aperiam sint? Cumque odit animi
-          ea iste quia, natus autem. Reprehenderit laboriosam nobis possimus?
-        </p>
+        <BlueDesign />
+
+        <DescriptionTitle>Designing</DescriptionTitle>
+        <WhatIDoDescription>
+          If there is no design is available, I can come up with my own
+          attractive design.
+        </WhatIDoDescription>
       </div>
       <div>
-        <BlueIcon>
-          <HomeAlt />
-        </BlueIcon>
-        <DescriptionTitle>Title</DescriptionTitle>
+        <BlueNode />
+
+        <DescriptionTitle>Developing in the backend</DescriptionTitle>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero beatae
-          facilis quasi qui libero eligendi est, aperiam sint? Cumque odit animi
-          ea iste quia, natus autem. Reprehenderit laboriosam nobis possimus?
+          I'm able to develop in the backend using NodeJs and ExpressJs, but I
+          have little professional experience
         </p>
       </div>
     </SectionContainer>

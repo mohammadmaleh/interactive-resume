@@ -4,13 +4,18 @@ import { pages } from "../../Routes";
 import MenuIcon from "../../components/hoc/MenuIcon/MenuIcon";
 import { ChevronRight, ChevronLeft } from "@styled-icons/boxicons-regular";
 import { useHistory, useLocation } from "react-router-dom";
-import { grey } from "../../constants/colors";
+import { grey, silver } from "../../constants/colors";
+import devices from "../../constants/breakpoints";
 interface Props {}
 const MenuContainer = styled.div`
   height: 100%;
   width: 70px;
   display: flex;
   flex-direction: column;
+  @media ${devices.mobileL} {
+    width: 100%;
+    height: 70px;
+  }
 `;
 
 const Menu = styled.div`
@@ -22,10 +27,32 @@ const Menu = styled.div`
   justify-content: space-between;
   padding: 40px 0;
   align-items: center;
+  @media ${devices.mobileL} {
+    flex-direction: row;
+    border-radius: 0;
+  }
 `;
 const NavigationMenu = styled(Menu)`
-  height: 160px;
-  margin-top: 20px;
+  height: 150px;
+  margin-top: 10px;
+  padding: 15px 0;
+  @media ${devices.mobileL} {
+    display: none;
+  }
+`;
+const ArrowRight = styled(ChevronRight)`
+  height: 45px;
+  width: 45px;
+  * {
+    color: ${silver}!important;
+  }
+`;
+const ArrowLeft = styled(ChevronLeft)`
+  height: 45px;
+  width: 45px;
+  * {
+    color: ${silver}!important;
+  }
 `;
 const MainMenu = ({}: Props): ReactElement => {
   const history = useHistory();
@@ -65,14 +92,14 @@ const MainMenu = ({}: Props): ReactElement => {
       <Menu>{renderIcons()}</Menu>
       <NavigationMenu>
         <MenuIcon
-          Icon={ChevronRight}
+          Icon={ArrowRight}
           handleOnClick={() => {
             swipePage("next");
           }}
           name={"Next"}
         />
         <MenuIcon
-          Icon={ChevronLeft}
+          Icon={ArrowLeft}
           handleOnClick={() => {
             swipePage("prev");
           }}

@@ -75,7 +75,7 @@ export default function Routes({}: Props): ReactElement {
     config: {
       easing: easings.easeCubic,
       mass: 10,
-      tension: 600,
+      tension: 1000,
       friction: 170,
     },
   });

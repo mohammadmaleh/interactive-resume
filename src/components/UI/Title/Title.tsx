@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { blue } from "../../../constants/colors";
+import { blue, white } from "../../../constants/colors";
 import styled from "styled-components";
 interface Props {
   children: String;
@@ -9,6 +9,7 @@ const MainTitle = styled.h1`
   font-size: 30px;
   position: relative;
   margin-bottom: 20px;
+  color: ${white};
 
   text-transform: capitalize;
   &:before {
@@ -30,6 +31,7 @@ const SubTitle = styled.h3`
   text-transform: capitalize;
   font-weight: 300;
   margin-bottom: 20px;
+  color: ${white};
   &:before {
     background: radial-gradient(${blue} 1px, transparent 1px),
       radial-gradient(${blue} 1px, transparent 1px), transparent;

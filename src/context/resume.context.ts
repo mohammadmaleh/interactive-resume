@@ -1,5 +1,6 @@
 import React from "react";
-export default React.createContext({
+import { AppStateType } from "../types";
+export default React.createContext<AppStateType>({
   mousePosition: {
     x: 0,
     y: 0,
@@ -12,5 +13,8 @@ export default React.createContext({
       show: boolean,
       text: string | undefined = ""
     ) => {},
+  },
+  projectDetails: {
+    changeSelectedProjectDetails: (id?: number): void => {},
   },
 });

@@ -82,7 +82,7 @@ const MenuIcon = ({
       )}
       {!link && (
         <div>
-          <Icon size={30} />
+          <Icon size={30} style={{ color: white }} />
         </div>
       )}
 

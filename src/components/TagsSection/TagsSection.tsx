@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import Title from "../UI/Title/Title";
-import { blue, white, grey, darkBlack } from "../../constants/colors";
+import { blue, white, grey, darkBlue } from "../../constants/colors";
 interface Props {
   tags: string[];
   title?: string;
@@ -20,7 +20,7 @@ const TagsContainer = styled.div`
   flex-wrap: wrap;
 `;
 const Tag = styled.div`
-  background-color: ${blue};
+  background-color: ${darkBlue};
   padding: 10px;
   color: ${white};
   display: inline-block;

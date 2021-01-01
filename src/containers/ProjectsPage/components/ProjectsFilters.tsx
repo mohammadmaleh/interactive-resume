@@ -1,20 +1,10 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import { silver, white, blue } from "../../../constants/colors";
-import {
-  reactJsTag,
-  jQueryTag,
-  HtmlCssTag,
-  angularJsTag,
-  es6Tag,
-  webPackTag,
-  typeScriptTag,
-  reduxJsTag,
-  designTag,
-  reactNativeTag,
-} from "../../../constants/projectsTags";
+import { projectTags } from "../../../constants/data";
 interface Props {
   selectProjectTag: Function;
+
   selectedTag: string;
 }
 const Container = styled.div`
@@ -24,6 +14,7 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  height: auto;
 `;
 const ProjectTag = styled.div`
   margin: 5px 10px 5px 0;
@@ -44,25 +35,30 @@ const ProjectTag = styled.div`
     border-bottom: 1px solid ${blue};
   }
 `;
-const ProjectsTags = [
+const projectsTagsArray = [
   "All",
-  reactJsTag,
-  jQueryTag,
-  HtmlCssTag,
-  angularJsTag,
-  es6Tag,
-  webPackTag,
-  typeScriptTag,
-  reduxJsTag,
-  designTag,
-  reactNativeTag,
+  projectTags.reactJsTag,
+  projectTags.reactNativeTag,
+
+  projectTags.typeScriptTag,
+  projectTags.designTag,
+
+  projectTags.HtmlCssTag,
+  projectTags.webPackTag,
+
+  projectTags.angularJsTag,
+  projectTags.scrumAgile,
+  projectTags.ci,
+  projectTags.aws,
+  projectTags.unitTest,
+  projectTags.express,
 ];
 export default function ProjectsFilters({
   selectProjectTag,
   selectedTag,
 }: Props): ReactElement {
   const renderProjectsTags = () =>
-    ProjectsTags.map((tag) => (
+    projectsTagsArray.map((tag) => (
       <ProjectTag key={tag} onClick={() => selectProjectTag(tag)}>
         <p className={`${selectedTag === tag ? "selected" : ""}`}>{tag}</p>
       </ProjectTag>

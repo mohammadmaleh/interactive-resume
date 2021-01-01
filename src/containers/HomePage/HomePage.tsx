@@ -2,12 +2,16 @@ import React, { ReactElement } from "react";
 import { PageContainer } from "../../components/UI/Layout/Layout";
 import styled from "styled-components";
 import { blue } from "../../constants/colors";
+import devices from "../../constants/breakpoints";
 interface Props {}
 const Name = styled.h1`
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: -1.89px;
   font-weight: bold;
+  @media ${devices.mobileL} {
+    text-align: center;
+  }
 `;
 const Profession = styled.h2`
   font-size: 20px;

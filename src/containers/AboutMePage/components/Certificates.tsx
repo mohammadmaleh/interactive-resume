@@ -61,13 +61,6 @@ export default function Certificates({}: Props): ReactElement {
           <p className="date">2005 ~ 2010</p>
         </TextContainer>
       </CertificateContainer>
-      <CertificateContainer>
-        <ImageContainer />
-        <TextContainer>
-          <p className="title">computer engineering</p>
-          <p className="date">2005 ~ 2010</p>
-        </TextContainer>
-      </CertificateContainer>
     </SectionContainer>
   );
 }

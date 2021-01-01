@@ -3,58 +3,17 @@ import React, { useState } from "react";
 import { SectionContainer } from "../../../components/UI/Layout/Layout";
 import Title from "../../../components/UI/Title/Title";
 import styled from "styled-components";
-import { grey, blue, lightBlack } from "../../../constants/colors";
+import { grey, blue, lightBlack, silver } from "../../../constants/colors";
 import Picture from "../../../assets/profile-picture.png";
 import { QuoteAltRight } from "@styled-icons/boxicons-solid/QuoteAltRight";
 import { useTrail, animated } from "react-spring";
 import * as easings from "d3-ease";
+import { testimonialsData } from "../../../constants/data";
+import { ChevronRight } from "@styled-icons/boxicons-regular/ChevronRight";
+import { ChevronLeft } from "@styled-icons/boxicons-regular/ChevronLeft";
+import devices from "../../../constants/breakpoints";
 interface Props {}
 
-const testimonialsData = [
-  {
-    id: 0,
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
-    name: "mohammad maleh",
-    position: "senior frontend developer",
-    picture: Picture,
-  },
-  {
-    id: 1,
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
-    name: "mohammad maleh",
-    position: "senior frontend developer",
-    picture: Picture,
-  },
-  {
-    id: 2,
-
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
-    name: "mohammad maleh",
-    position: "senior frontend developer",
-    picture: Picture,
-  },
-  {
-    id: 3,
-
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
-    name: "mohammad maleh",
-    position: "senior frontend developer",
-    picture: Picture,
-  },
-  {
-    id: 4,
-
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
-    name: "mohammad maleh",
-    position: "senior frontend developer",
-    picture: Picture,
-  },
-];
 const TestimonialsContainer = styled.div`
   grid-column-start: 1;
   grid-column-end: 3;
@@ -67,7 +26,7 @@ const TestimonialsContainer = styled.div`
 `;
 const TestimonialContainer = styled.div`
   width: 380px;
-  height: 330px;
+  height: auto;
   background-color: ${lightBlack};
   border: 2px solid ${grey};
   border-radius: 40px;
@@ -78,6 +37,9 @@ const TestimonialContainer = styled.div`
   position: relative;
   margin-top: 20px;
   padding: 20px;
+  @media ${devices.mobileL} {
+    width: 330px;
+  }
 `;
 const ImageContainer = styled.img`
   width: 80px;
@@ -114,7 +76,25 @@ const BlueQuote = styled(QuoteAltRight)`
   width: 40px;
   height: 40px;
 `;
+const NextButton = styled(ChevronRight)`
+  hight: 60px;
+  width: 60px;
+  color: ${silver};
+  cursor: pointer;
+`;
 
+const PrevButton = styled(ChevronLeft)`
+  hight: 60px;
+  width: 60px;
+  color: ${silver};
+  cursor: pointer;
+`;
+const ControlsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
 export default function Testimonials({}: Props): ReactElement {
   const [counter, setCounter] = useState(0);
   const [trail, set] = useTrail(testimonialsData.length, () => ({
@@ -122,8 +102,8 @@ export default function Testimonials({}: Props): ReactElement {
     zIndex: 1,
     config: {
       mass: 2,
-      tension: 100,
-      friction: 20,
+      tension: 300,
+      friction: 30,
       easing: easings.easeCubic,
     },
   }));
@@ -147,29 +127,25 @@ export default function Testimonials({}: Props): ReactElement {
   return (
     <SectionContainer>
       <Title>Testimonials</Title>
-      <div>
-        <button
+      <ControlsContainer>
+        <PrevButton
           onClick={() => {
             let incrementNumber =
               counter === 0 ? testimonialsData.length - 1 : counter - 1;
-            console.log(counter, incrementNumber);
             setCounter(incrementNumber);
             set({ x: counter * 400 });
           }}
-        >
-          prev
-        </button>
-        <button
+        />
+
+        <NextButton
           onClick={() => {
             let incrementNumber =
               counter === testimonialsData.length - 1 ? 0 : counter + 1;
             setCounter(incrementNumber);
             set({ x: counter * 400 });
           }}
-        >
-          next
-        </button>
-      </div>
+        />
+      </ControlsContainer>
       <TestimonialsContainer>
         {trail.map(({ x, height, ...rest }, index) => (
           <animated.div
@@ -186,8 +162,6 @@ export default function Testimonials({}: Props): ReactElement {
                 <Quote>{testimonialsData[index].quote}</Quote>
                 <BottomContainer>
                   <NameContainer>
-                    {testimonialsData[index].id}
-
                     <p>{testimonialsData[index].name}</p>
                     <p className="position">
                       {testimonialsData[index].position}
@@ -204,21 +178,3 @@ export default function Testimonials({}: Props): ReactElement {
     </SectionContainer>
   );
 }
-
-// export default function Testimonials({}: Props): JSX.Element {
-//   const items = [{ name: 1 }, { name: 2 }, { name: 3 }];
-
-//   return (
-//     <TestimonialsContainer
-//     // style={{ width: "100%", background: "red", overflow: "auto" }}
-//     >
-//       <button
-//         onClick={() => {
-//           set({ x: 1000 });
-//         }}
-//       >
-//         next
-//       </button>
-//     </TestimonialsContainer>
-//   );
-// }

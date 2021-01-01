@@ -27,7 +27,7 @@ const SecondaryContainer = styled(animated.div)`
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
-  `;
+`;
 const TracerText = styled(animated.p)`
   font-size: 1.2em;
   color: ${white};
@@ -46,9 +46,9 @@ const TracerNotification = (): ReactElement => {
     xy: [x, y],
     config: {
       mass: 1,
-      tension: 4000,
-      friction: 130,
-
+      tension: 12000,
+      friction: 1,
+      duration: 100,
       easing: easings.easeCubic,
     },
   }));

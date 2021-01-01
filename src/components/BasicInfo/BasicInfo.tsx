@@ -7,7 +7,7 @@ import { Mail } from "@styled-icons/entypo/Mail";
 import Button from "../UI/Button/Button";
 import { white } from "../../constants/colors";
 import ResumeContext from "../../context/resume.context";
-
+import devices from "../../constants/breakpoints";
 interface Props {}
 interface IconContainerProps {
   notificationText: string;
@@ -24,6 +24,9 @@ const Container = styled.div`
   max-width: 330px;
   overflow: auto;
   height: 100%;
+  @media ${devices.tablet} {
+    display: none;
+  }
 `;
 const ProfileImage = styled.img`
   border: 1px solid ${white};
