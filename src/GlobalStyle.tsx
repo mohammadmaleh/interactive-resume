@@ -1,7 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 import { darkBlack, white, blue } from "./constants/colors";
 const GlobalStyle = createGlobalStyle`
-@import url(‘https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap');
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./assets/fonts/Lato/Lato-Black.ttf'); 
+  src: url('./assets/fonts/Lato/Lato-Bold.ttf') format(truetype), 
+       url('./assets/fonts/Lato/Lato-Italic.ttf') format('truetype'), 
+       url('./assets/fonts/Lato/Lato-Light.ttf') format('truetype'),
+       url('./assets/fonts/Lato/Lato-Regular.ttf')  format('truetype'),
+       url('./assets/fonts/Lato/Lato-Thin.ttf') format('truetype');
+}
 
   body {
     background-color:${darkBlack};
