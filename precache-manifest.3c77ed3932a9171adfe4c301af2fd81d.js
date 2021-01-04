@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff1bd30a8baf638bbd8c01a204ffd2a6",
+    "revision": "e51711e2891f704a6ab3cb393562238d",
     "url": "/interactive-resume/index.html"
   },
   {
-    "revision": "1a00742bee32ebaec203",
+    "revision": "3117b27b34bdffb3bb08",
     "url": "/interactive-resume/static/css/2.25249b3f.chunk.css"
   },
   {
-    "revision": "447eb29155d93a74b307",
+    "revision": "2b6d2bacdcaf1adb5cb9",
     "url": "/interactive-resume/static/css/main.46de88b7.chunk.css"
   },
   {
-    "revision": "1a00742bee32ebaec203",
-    "url": "/interactive-resume/static/js/2.29293eb6.chunk.js"
+    "revision": "3117b27b34bdffb3bb08",
+    "url": "/interactive-resume/static/js/2.653c6d0d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/interactive-resume/static/js/2.29293eb6.chunk.js.LICENSE.txt"
+    "url": "/interactive-resume/static/js/2.653c6d0d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "447eb29155d93a74b307",
-    "url": "/interactive-resume/static/js/main.ca2a3bdd.chunk.js"
+    "revision": "2b6d2bacdcaf1adb5cb9",
+    "url": "/interactive-resume/static/js/main.4d66854d.chunk.js"
   },
   {
     "revision": "e0a69dba9960e7a7e634",
@@ -232,6 +232,42 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interactive-resume/static/media/global-energy9.73957293.png"
   },
   {
+    "revision": "107d152e1cc13230b1cef71c2d6749e0",
+    "url": "/interactive-resume/static/media/ineractive-resume1.107d152e.png"
+  },
+  {
+    "revision": "3851ded33ac6186419148ffd3a75470b",
+    "url": "/interactive-resume/static/media/ineractive-resume10.3851ded3.png"
+  },
+  {
+    "revision": "72ed78475a0902bb47d862c3bab1cb6b",
+    "url": "/interactive-resume/static/media/ineractive-resume2.72ed7847.png"
+  },
+  {
+    "revision": "644cf840245d3fc9ac95517b0a48783e",
+    "url": "/interactive-resume/static/media/ineractive-resume3.644cf840.png"
+  },
+  {
+    "revision": "bc0553e1d524079467c70f15d8cc03e5",
+    "url": "/interactive-resume/static/media/ineractive-resume4.bc0553e1.png"
+  },
+  {
+    "revision": "903278ab2dc4f65ab217d4122edd966a",
+    "url": "/interactive-resume/static/media/ineractive-resume5.903278ab.png"
+  },
+  {
+    "revision": "16239361eaa5dfcd8102708a5a1f27a0",
+    "url": "/interactive-resume/static/media/ineractive-resume6.16239361.png"
+  },
+  {
+    "revision": "75824404944f2ccf1ed8d31aeb3e51f6",
+    "url": "/interactive-resume/static/media/ineractive-resume7.75824404.png"
+  },
+  {
+    "revision": "dbd4bfb914ee71088cc709cca1750c3b",
+    "url": "/interactive-resume/static/media/ineractive-resume9.dbd4bfb9.png"
+  },
+  {
     "revision": "a231c92f402026648cdead38f5085e90",
     "url": "/interactive-resume/static/media/instaLikeTrader1.a231c92f.jpg"
   },
@@ -440,6 +476,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interactive-resume/static/media/kambo9.d4b8d902.png"
   },
   {
+    "revision": "4e7db728334a574fe9d81ed35679d2d2",
+    "url": "/interactive-resume/static/media/main-image.4e7db728.jpg"
+  },
+  {
     "revision": "1e69abd73601e19e6de95edf63581e4d",
     "url": "/interactive-resume/static/media/myKredit1.1e69abd7.png"
   },
@@ -558,10 +598,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c06089c85c55c32f8221839451642793",
     "url": "/interactive-resume/static/media/proPlan3.c06089c8.png"
-  },
-  {
-    "revision": "11c3a8cdabe33299dc578f93f37fde45",
-    "url": "/interactive-resume/static/media/profile-picture.11c3a8cd.png"
   },
   {
     "revision": "8cb5aba2b229487aa63f7fa71a461074",
