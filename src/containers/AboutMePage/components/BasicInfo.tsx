@@ -33,7 +33,7 @@ export default function BasicInfo({}: Props): ReactElement {
         I am a frontend developer, passionate about learning and implementing
         cutting-edge technologies, with 7 years of professional experience
         working using modern web technologies like React and ExpressJS. Always
-        looking to provide my employers with highperformance and attractive web
+        looking to provide my employers with high performance and attractive web
         applications.
       </AboutMeText>
       <div>

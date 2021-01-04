@@ -102,9 +102,9 @@ export default function ContactPage({}: Props): ReactElement {
     {
       id: 2,
 
-      text: "Sariyer - Istanbul - Turkey",
+      text: "+90 507 099 0448",
       icon: <TelephoneFill />,
-      link: "tel:00905070990448",
+      link: "tel:+905070990448",
     },
     {
       id: 3,
