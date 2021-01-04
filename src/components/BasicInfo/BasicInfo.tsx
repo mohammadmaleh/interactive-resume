@@ -110,7 +110,10 @@ export default function BasicInfo({}: Props): ReactElement {
           </a>
         </IconContainer>
         <IconContainer notificationText={"Download my resume"}>
-          <a href="../../assets/pdf/Mohammad-Maleh-Resume-2021.pdf" download>
+          <a
+            href="https://drive.google.com/file/d/1pND9_EnxjL6o6tbLl3yj-B_pB-nvIkH4/view?usp=sharing"
+            target="_blank"
+          >
             <DownloadIcon />
           </a>
         </IconContainer>
