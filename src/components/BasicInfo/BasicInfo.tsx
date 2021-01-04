@@ -1,9 +1,10 @@
 import React, { ReactElement, useContext } from "react";
 import styled from "styled-components";
-import profilePicture from "../../assets/profile-picture.png";
+import profilePicture from "../../assets/main-image.jpg";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
+import { Download } from "@styled-icons/boxicons-regular/Download";
 import Button from "../UI/Button/Button";
 import { white } from "../../constants/colors";
 import ResumeContext from "../../context/resume.context";
@@ -46,7 +47,7 @@ const JobDescription = styled.p`
 `;
 const IconsContainer = styled.div`
   display: flex;
-  width: 150px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
@@ -60,6 +61,10 @@ const LinkedInIcon = styled(LinkedinSquare)`
   height: 30px;
 `;
 const MailIcon = styled(Mail)`
+  color: ${white};
+  height: 30px;
+`;
+const DownloadIcon = styled(Download)`
   color: ${white};
   height: 30px;
 `;
@@ -90,13 +95,24 @@ export default function BasicInfo({}: Props): ReactElement {
       <JobDescription>Senior Frontend Developer</JobDescription>
       <IconsContainer>
         <IconContainer notificationText={"Checkout my Github Account"}>
-          <GithubIcon />
+          <a href="https://github.com/mohammadmaleh" target="_blank">
+            <GithubIcon />
+          </a>
         </IconContainer>
         <IconContainer notificationText={"Message me on LinkedIn"}>
-          <LinkedInIcon />
+          <a href="https://www.linkedin.com/in/mohammad-maleh/" target="_blank">
+            <LinkedInIcon />
+          </a>
         </IconContainer>
         <IconContainer notificationText={"Send me an email"}>
-          <MailIcon />
+          <a href="mailto:mohammad.maleh@gmail.com" target="_blank">
+            <MailIcon />
+          </a>
+        </IconContainer>
+        <IconContainer notificationText={"Download my resume"}>
+          <a href="../../assets/pdf/Mohammad-Maleh-Resume-2021.pdf" download>
+            <DownloadIcon />
+          </a>
         </IconContainer>
       </IconsContainer>
       {/*<Button>Download Resume!</Button>*/}

@@ -4,7 +4,7 @@ import BasicInfo from "../../components/BasicInfo/BasicInfo";
 import MainMenu from "../MainMenu/MainMenu";
 
 import Routes from "../../Routes";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { HashRouter as Router, useLocation } from "react-router-dom";
 import ResumeContext from "../../context/resume.context";
 import { grey } from "../../constants/colors";
 import devices from "../../constants/breakpoints";

@@ -10,7 +10,7 @@ interface Props {
 
 const SliderContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: 387px;
   position: relative;
   margin-bottom: 40px;
   @media ${devices.mobileL} {
@@ -18,7 +18,7 @@ const SliderContainer = styled.div`
   }
 `;
 const SliderImage = styled.img`
-  height: 500px;
+  height: 387px;
   @media ${devices.mobileL} {
     height: 300px;
   }

@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'MyWebFont';
   src: url('./assets/fonts/Lato/Lato-Black.ttf'); 
-  src: url('./assets/fonts/Lato/Lato-Bold.ttf') format(truetype), 
+  src: url('./assets/fonts/Lato/Lato-Bold.ttf') format('truetype'), 
        url('./assets/fonts/Lato/Lato-Italic.ttf') format('truetype'), 
        url('./assets/fonts/Lato/Lato-Light.ttf') format('truetype'),
        url('./assets/fonts/Lato/Lato-Regular.ttf')  format('truetype'),

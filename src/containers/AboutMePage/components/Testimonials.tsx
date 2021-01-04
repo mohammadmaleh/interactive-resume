@@ -75,6 +75,7 @@ const BlueQuote = styled(QuoteAltRight)`
   color: ${blue};
   width: 40px;
   height: 40px;
+  margin-bottom: 20px;
 `;
 const NextButton = styled(ChevronRight)`
   hight: 60px;

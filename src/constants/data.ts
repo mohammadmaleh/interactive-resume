@@ -178,6 +178,18 @@ import instaLikeTrader2 from "../assets/projects/instaLikestrader/instaLikeTrade
 import instaLikeTrader3 from "../assets/projects/instaLikestrader/instaLikeTrader3.jpg";
 import instaLikeTrader4 from "../assets/projects/instaLikestrader/instaLikeTrader4.jpg";
 
+import interActiveResume1 from "../assets/projects/interactive-resume/ineractive-resume1.png";
+import interActiveResume2 from "../assets/projects/interactive-resume/ineractive-resume2.png";
+import interActiveResume3 from "../assets/projects/interactive-resume/ineractive-resume3.png";
+import interActiveResume4 from "../assets/projects/interactive-resume/ineractive-resume4.png";
+import interActiveResume5 from "../assets/projects/interactive-resume/ineractive-resume5.png";
+import ineractiveResume6 from "../assets/projects/interactive-resume/ineractive-resume6.png";
+import ineractiveResume7 from "../assets/projects/interactive-resume/ineractive-resume7.png";
+import ineractiveResume8 from "../assets/projects/interactive-resume/ineractive-resume8.png";
+import ineractiveResume9 from "../assets/projects/interactive-resume/ineractive-resume9.png";
+import ineractiveResume10 from "../assets/projects/interactive-resume/ineractive-resume10.png";
+import { zip } from "lodash-es";
+
 export const projectTags = {
   reactJsTag: "ReactJS",
   jQueryTag: "jQuery",
@@ -206,7 +218,7 @@ export const testimonialsData = [
   {
     id: 0,
     quote:
-      "Not only was Mohammad’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
+      "Not only was Mohammad’s work on-time and to spec, he pays attention to improve the desgin as well as the functionality.  and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.",
     name: "Can Gulec",
     position: "Co-founder at Global Kapital Tech",
     picture: canGulec,
@@ -214,7 +226,7 @@ export const testimonialsData = [
   {
     id: 1,
     quote:
-      "Working with Ian was better than expected and we had really high expectations. He is an incredibly talented developer but what really makes him stand out is his work ethic and steady approach. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients.",
+      "Working with Mohammad was better than expected and we had really high expectations. He is an incredibly talented developer but what really makes him stand out is his work ethic and steady approach. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients.",
     name: "Fatih Garipoglu",
     position: "Product Owner at Global Kapital Tech",
     picture: fatihGaripoglu,
@@ -223,7 +235,7 @@ export const testimonialsData = [
     id: 2,
 
     quote:
-      "It has been a real pleasure working with Ian. He has been very professional and very clear in all communications, which I appreciate.",
+      "It has been a real pleasure working with Mohammad. He has been very professional and very clear in all communications, which I appreciate.",
     name: "Ceri Tandoğan",
     position: "Projects Manager at Global Kapital FX",
     picture: ceri,
@@ -232,7 +244,7 @@ export const testimonialsData = [
     id: 3,
 
     quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
+      "Very creative, eager to learn new technologies, always following new trends and implementing best practices,  he adapted very quickly into our workflow ",
     name: "Sedat Doğaner",
     position: "Team Leader at Global Kapital FX",
     picture: sedat,
@@ -240,8 +252,7 @@ export const testimonialsData = [
   {
     id: 4,
 
-    quote:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sit officia aspernatur, veniam dolore cumque nihil? Ab cupiditate expedita quos vel officia hic praesentium voluptatum, perspiciatis   harum et omnis iure.",
+    quote: "Quick learner, smart, ethic, our team's DJ!!",
     name: "Umut Şenoğlu",
     position: "Projects Manager at FIMM",
     picture: umut,
@@ -375,65 +386,64 @@ export const knowledgeData = [
 
 export const projectsData = [
   {
-    mainImage: interactiveResumeMain,
-    id: 20,
-    tags: [
-      projectTags.reactJsTag,
-      projectTags.typeScriptTag,
-      projectTags.contextApiTag,
-      projectTags.scssTag,
-      projectTags.jira,
-    ],
-
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "online",
-    name: "Interactive Resume",
-    year: "2020",
-    company: "Owned",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [""],
-  },
-  {
-    mainImage: instaLikesTraderMain,
-    id: 1,
+    mainImage: interaudiMainImage,
+    id: 8,
     tags: [
       projectTags.reactJsTag,
       projectTags.reduxJsTag,
-      projectTags.webPackTag,
       projectTags.scssTag,
+      projectTags.webPackTag,
+      projectTags.scrumAgile,
+      projectTags.ci,
+      projectTags.unitTest,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary: "Online banking web app",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1hUCwKonzmHcdwKVMEJLKgTZ3zjwNeLKx?usp=sharing",
+      link: "https://www.interaudibank.com/",
     },
-    status: "offline",
-    name: "Insta Likes Trader",
-    year: "2020",
-    company: "",
+    status: "online",
+    name: "Interaudi",
+    year: "2018",
+    company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Online banking web app
+   
+    Interaudi is an American established bank, my company developing their banking web application,
+    I maintained this application and developed some new features,
+    The application has very complex architecture,
+    All the fields and validations are coming from Interaudi database, the frontend is responsible to render it dynamically
+    The application is written using ReactJS/ReduxJS/redux-saga
+    
+    `,
+
     screenshots: [
-      instaLikeTrader1,
-      instaLikeTrader2,
-      instaLikeTrader3,
-      instaLikeTrader4,
+      interaudi6,
+      interaudi12,
+      interaudi1,
+      interaudi14,
+      interaudi11,
+      interaudi3,
+      interaudi9,
+      interaudi7,
+      interaudi2,
+      interaudi15,
+      interaudi5,
+      interaudi19,
+      interaudi8,
+      interaudi16,
+      interaudi4,
+      interaudi18,
+      interaudi13,
+      interaudi17,
     ],
   },
   {
     mainImage: kamboMainImage,
-    id: 1,
+    id: 133,
     tags: [
       projectTags.reactJsTag,
       projectTags.reduxJsTag,
@@ -441,19 +451,29 @@ export const projectsData = [
       projectTags.scssTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary: "Crypto currency based loans SPA.",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1VYHl_6YMQ7AveW1FIjLHaBzVkLSbQiz0?usp=sharing",
+      link: "http://www.kambo.io/",
     },
-    status: "offline",
+    status: "online",
     name: "Kambo",
     year: "2018",
     company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Crypto currency based loans SPA.
+      
+      It provide crypto currency owners the ability to loan cache money without selling their crypto currency.
+      I implemented a professional psd design pixel to pixel, worked directly with design manger,
+      I suggested new ideas and features to the project, like a tour for new comers and user experience recording.
+      The home page is written using HTML/JQuery for better SEO,
+      The main application is written using ReactJS/ReduxJS,
+      It also has a dashboard and charts for admin
+      
+      
+      `,
     screenshots: [
       kambo1,
       kambo2,
@@ -478,20 +498,32 @@ export const projectsData = [
       projectTags.reactNativeTag,
       projectTags.reduxJsTag,
       projectTags.fireBase,
+      projectTags.designTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary:
+      "Whatsapp tracking mobile application for android with 1M+ downloads",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1r89Uw4xOa23Ta7k5wFYf6InuXMZyKYCe?usp=sharing",
+      link: "https://play.google.com/store/apps/details?id=com.wtrack_android",
     },
-    status: "offline",
+    status: "online",
     name: "Family Track",
     year: "2019",
     company: "Global Kapital Tech",
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Whatsapp tracking mobile application for android with 1M+ downloads
+    
+    
+      I developed the most successful project of the company.
+      the application is about track the online status of Whatsapp users without letting them know.
+      I created my first React-native app for android,
+      The application has more than one million downloads on google play,
+      And making more than 100k dollars a month,
+      It introduced me into mobile development, and I'm very exited about react-native 
+      
+      `,
 
     screenshots: [
       familyTrack1,
@@ -502,26 +534,325 @@ export const projectsData = [
     ],
   },
   {
+    mainImage: myKreditMain,
+    id: 11,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.reduxJsTag,
+      projectTags.webPackTag,
+      projectTags.scssTag,
+      projectTags.scrumAgile,
+      projectTags.ci,
+      projectTags.unitTest,
+    ],
+    active: false,
+    summary: "Online bank-independent loans SPA.",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1lLclBPtQr1Fmd8WaYNkoGA5cZZmpD6mR?usp=sharing",
+      link: "https://mykredit.com/",
+    },
+    status: "online",
+    name: "My Kredit",
+    year: "2018",
+    company: "Global Kapital Tech",
+
+    description: `Online bank-independent loans SPA.
+    
+    This app helps users with bank issues to take loans,
+    It was created using ReactJS/ReduxJS/redux-saga
+    It has relatively complex architecture.
+    My role was minimal on this application, but i helped to maintain it and developed a couple of features `,
+    screenshots: [myKredit1, myKredit2, myKredit3, myKredit4, myKredit5],
+  },
+  {
+    mainImage: interactiveResumeMain,
+    id: 20,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.typeScriptTag,
+      projectTags.contextApiTag,
+      projectTags.scssTag,
+      projectTags.jira,
+      projectTags.designTag,
+    ],
+
+    active: false,
+    summary: "interactive portfolio",
+    links: {
+      github: "https://github.com/mohammadmaleh/interactive-resume",
+      screenshots:
+        "https://drive.google.com/drive/folders/17dYdmZroSfEeehNxhrVRqUUh2SvVBQrJ?usp=sharing",
+      link: "https://mohammadmaleh.github.io/interactive-resume",
+    },
+    status: "online",
+    name: "Interactive Resume",
+    year: "2020",
+    company: "Owned",
+
+    description: `interactive portfolio
+      
+      A personal portfolio that I designed my self,
+      I watched a React conference about a new animation technology based on physics called react-spring.
+      and decided to do my portfolio using it, and had very attractive and appealing results :) 
+    `,
+
+    screenshots: [
+      interActiveResume1,
+      interActiveResume2,
+      interActiveResume3,
+      interActiveResume4,
+      interActiveResume5,
+      ineractiveResume6,
+      ineractiveResume7,
+      ineractiveResume8,
+      ineractiveResume9,
+      ineractiveResume10,
+    ],
+  },
+
+  {
+    mainImage: partnersPortalMain,
+    id: 13,
+    tags: [
+      projectTags.angularJsTag,
+      projectTags.webPackTag,
+      projectTags.scssTag,
+      projectTags.scrumAgile,
+      projectTags.ci,
+      projectTags.unitTest,
+    ],
+    active: false,
+    summary: "a forex related contract life cycle management system.",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1mOb031yL4REOksZ7mlE0sSysI-dv0fOP?usp=sharing",
+      link: "https://partnersportal.gkfx.com/",
+    },
+    status: "online",
+    name: "Partners Portal",
+    year: "2015 - 2017",
+    company: "Global Kapital FX",
+
+    description: `a forex related contract life cycle management system.
+    
+    the project manages a complex relationships between our forex contractors.
+    Global Kapital FX is one of the most successful companies in Turkey in forex trading.
+    Worked with a high tech international team of two frontend developers (my team was awarded as the best team in the company).
+    I was introduced to new concepts and learned a lot working on this project like: scrum, CI, Unit Testing, workflow automation tools.
+    The company was always encouraging us to enhance the project and introduce new web technologies and implementing them,for example: 
+      - I refactored the whole project to make it more modular, and more testable.
+      - I changed workflow automation tools from grunt into gulp and later i switch into webpack
+      - I introduced end-to-end unit testing
+    
+     `,
+    screenshots: [
+      partnersPortal1,
+      partnersPortal2,
+      partnersPortal3,
+      partnersPortal4,
+      partnersPortal5,
+      partnersPortal6,
+      partnersPortal7,
+      partnersPortal8,
+      partnersPortal9,
+      partnersPortal10,
+      partnersPortal11,
+      partnersPortal12,
+      partnersPortal13,
+      partnersPortal14,
+      partnersPortal15,
+    ],
+  },
+  {
+    mainImage: germanWarehouseMainImage,
+    id: 6,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.reduxJsTag,
+      projectTags.scssTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Small CRM system to manage a warehouse business.",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1AGoTvWiWkwt_08IYkGHDG3cdAXKG0Oex?usp=sharing",
+      link: "",
+    },
+    status: "offline",
+    name: "Warehouse System",
+    year: "2019",
+    company: "Global Kapital Tech",
+
+    description: `Small CRM system to manage a warehouse business.
+    
+    A small CRM designed to track the shipment life cycle of multiple products.
+    It has multi users roles like: warehouse workers, sales, admin etc..
+    The application tracks each product from storing the product until successful shipment, also handles rejection and returns.
+    It also has a dashboard to track successful products , successfully shipments, most rejected products etc...
+    It has multi languages, because the workers speaks different languages 
+    It is written using ReactJS/ReduxJS/AntDesign`,
+
+    screenshots: [
+      germanWarehouse1,
+      germanWarehouse2,
+      germanWarehouse3,
+      germanWarehouse4,
+      germanWarehouse5,
+      germanWarehouse6,
+      germanWarehouse7,
+      germanWarehouse8,
+    ],
+  },
+  {
+    mainImage: kamboExchangeMain,
+    id: 10,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.reduxJsTag,
+      projectTags.webPackTag,
+      projectTags.scssTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Crypto currency based exchange SPA",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/11ILznRvylj1Te8dEWMjUB9M0xXQTqn7i?usp=sharing",
+      link: "",
+    },
+    status: "offline",
+    name: "Kambo Exchange",
+    year: "2019",
+    company: "Global Kapital Tech",
+
+    description: `Crypto currency based exchange SPA
+      
+      I developed the frontend of a legacy Crypto currency trading website.
+      I had no design so I came up with a design inspired by "Kambo.io".
+      the home screen is written using HTML/SCSS/JQuery for better the SEO support.
+      the main application is written using ReactJS/ReduxJS.
+      `,
+
+    screenshots: [
+      kamboExchange1,
+      kamboExchange2,
+      kamboExchange3,
+      kamboExchange4,
+      kamboExchange5,
+      kamboExchange6,
+      kamboExchange7,
+      kamboExchange8,
+      kamboExchange9,
+    ],
+  },
+  {
+    mainImage: papillaMain,
+    id: 12,
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Corporate based website for a cookware company",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1Uvgcqt2_MNveJEcTG6YXq9qPXiHdL_GR?usp=sharing",
+      link: "http://papilla.com.tr/",
+    },
+    status: "online",
+    name: "Papilla",
+    year: "2019",
+    company: "Global Kapital Tech",
+
+    description: `Corporate based website for a cookware company
+      
+      My task is to design and create a website for a cookware company.
+      I think it's one of my most attractive websites.
+      I created using HTML/SCSS.
+      `,
+    screenshots: [
+      papilla1,
+      papilla2,
+      papilla3,
+      papilla4,
+      papilla5,
+      papilla6,
+      papilla7,
+    ],
+  },
+  {
+    mainImage: instaLikesTraderMain,
+    id: 1,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.reduxJsTag,
+      projectTags.webPackTag,
+      projectTags.scssTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Get free likes on Instagram Posts",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1w71UU9RCY72bryE2lBWIoTsZJDxd0lf6?usp=sharing",
+      link: "",
+    },
+    status: "offline",
+    name: "Insta Likes Trader",
+    year: "2020",
+    company: "Owned",
+
+    description: `Get free likes on Instagram Posts.
+      
+      I came up with a way to make an Instagram user to like another user's post through an app.
+      I created a business model to make users get free like and also to buy them.
+      the app still in its early stages of development.
+      I'm creating the app using React-native, Nodejs, MySQL, Jira,
+      `,
+    screenshots: [
+      instaLikeTrader1,
+      instaLikeTrader2,
+      instaLikeTrader3,
+      instaLikeTrader4,
+    ],
+  },
+
+  {
     mainImage: chatTrackMainImage,
     id: 3,
     tags: [
       projectTags.reactNativeTag,
       projectTags.reduxJsTag,
       projectTags.fireBase,
+      projectTags.designTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary: `Backup application for "Family Track", a Whatsapp tracking android app`,
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1EhWaaI2qQHEW_0LCl5CwNni6CbpcsopQ?usp=sharing",
+      link:
+        "https://play.google.com/store/apps/details?id=com.whatsdog.chatwatch.chattrack&hl=en_US&gl=US&showAllReviews=true",
     },
-    status: "offline",
+    status: "online",
     name: "Chat Track",
     year: "2019",
     company: "Global Kapital Tech",
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Backup application for "Family Track", a Whatsapp tracking system app for android.
+    
+    created a backup application to the company's most successful application "Family Track".
+    it has a 100,000+ downloads. 
+    I created it using React-native only for android.`,
 
     screenshots: [chatTrack1, chatTrack2, chatTrack3],
   },
@@ -534,19 +865,23 @@ export const projectsData = [
       projectTags.HtmlCssTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary:
+      "Corporate based website to sell water, with a dashboard to track sells",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1-85mj_LRBOT23uZBz6EysoJ1gz9Y-svY?usp=sharing",
+      link: "http://avantewater.com/",
     },
-    status: "offline",
+    status: "online",
     name: "Avante",
-    year: "2019",
+    year: "2020",
     company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Corporate based website to sell water, with a dashboard to track sells.
+    
+    I created only a dashboard with charts using ReactJS/ReduxJs.
+    To track the sales of the company, in addition to some modification to the design`,
     screenshots: [
       avante1,
       avante2,
@@ -569,21 +904,26 @@ export const projectsData = [
       projectTags.reactJsTag,
       projectTags.reduxJsTag,
       projectTags.HtmlCssTag,
+      projectTags.designTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary: "AI based android App, generating cup fortune telling",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1MwZJWMRq-gvmda-TzG2lR0ECD87_a6UP?usp=sharing",
+      link:
+        "https://play.google.com/store/apps/details?id=com.gk.fincan&hl=en&gl=US",
     },
-    status: "offline",
+    status: "online",
     name: "Fincan",
-    year: "2019",
+    year: "2020",
     company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `AI based android App, generating cup fortune telling.
+      
+      I worked on the home screen of the project using HTML/SCSS.
+      also created a dashboard with multiple charts to track the application activities, using ReactJS/ReduxJS`,
     screenshots: [
       fincan1,
       fincan2,
@@ -595,53 +935,31 @@ export const projectsData = [
       fincan8,
     ],
   },
-  {
-    mainImage: germanWarehouseMainImage,
-    id: 6,
-    tags: [projectTags.reactJsTag, projectTags.reduxJsTag, projectTags.scssTag],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "German Warehouse",
-    year: "2018",
-    company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      germanWarehouse1,
-      germanWarehouse2,
-      germanWarehouse3,
-      germanWarehouse4,
-      germanWarehouse5,
-      germanWarehouse6,
-      germanWarehouse7,
-      germanWarehouse8,
-    ],
-  },
   {
     mainImage: globalMainImage,
     id: 7,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
     active: false,
-    summary: "blablabalbla",
+    summary: "Corporate based website for a mining company",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1xnb6wOzTAzW7DN9HrEnRxuKERDK1SfS8?usp=sharing",
+      link: "http://www.gep-eu.com/",
     },
-    status: "offline",
+    status: "online",
     name: "Global Energy",
-    year: "2019",
+    year: "2020",
     company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Corporate based website for a mining company.
+      
+      I was given a poor old designed Corporate website, my task was to redesign it using HTML/SCSS.`,
     screenshots: [
       globalEnergy1,
       globalEnergy2,
@@ -657,213 +975,7 @@ export const projectsData = [
       globalEnergy12,
     ],
   },
-  {
-    mainImage: interaudiMainImage,
-    id: 8,
-    tags: [
-      projectTags.reactJsTag,
-      projectTags.reduxJsTag,
-      projectTags.scssTag,
-      projectTags.webPackTag,
-      projectTags.scrumAgile,
-      projectTags.ci,
-      projectTags.unitTest,
-    ],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Interaudi",
-    year: "2018",
-    company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      interaudi6,
-      interaudi12,
-      interaudi1,
-      interaudi14,
-      interaudi11,
-      interaudi3,
-      interaudi9,
-      interaudi7,
-      interaudi2,
-      interaudi15,
-      interaudi5,
-      interaudi19,
-      interaudi8,
-      interaudi16,
-      interaudi4,
-      interaudi18,
-      interaudi13,
-      interaudi17,
-    ],
-  },
-  {
-    mainImage: medicalMainImage,
-    id: 9,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Istanbul Cosmetic Clinic",
-    year: "2019",
-    company: "Global Kapital Tech",
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      istanbulCosmaticClinic1,
-      istanbulCosmaticClinic2,
-      istanbulCosmaticClinic3,
-      istanbulCosmaticClinic5,
-      istanbulCosmaticClinic6,
-      istanbulCosmaticClinic7,
-    ],
-  },
-  {
-    mainImage: kamboExchangeMain,
-    id: 10,
-    tags: [
-      projectTags.reactJsTag,
-      projectTags.reduxJsTag,
-      projectTags.webPackTag,
-      projectTags.scssTag,
-    ],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Kambo Exchange",
-    year: "2018",
-    company: "Global Kapital Tech",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      kamboExchange1,
-      kamboExchange2,
-      kamboExchange3,
-      kamboExchange4,
-      kamboExchange5,
-      kamboExchange6,
-      kamboExchange7,
-      kamboExchange8,
-      kamboExchange9,
-    ],
-  },
-  {
-    mainImage: myKreditMain,
-    id: 11,
-    tags: [
-      projectTags.reactJsTag,
-      projectTags.reduxJsTag,
-      projectTags.webPackTag,
-      projectTags.scssTag,
-      projectTags.scrumAgile,
-      projectTags.ci,
-      projectTags.unitTest,
-    ],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "My Kredit",
-    year: "2018",
-    company: "Global Kapital Tech",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [myKredit1, myKredit2, myKredit3, myKredit4, myKredit5],
-  },
-  {
-    mainImage: papillaMain,
-    id: 12,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Papilla",
-    year: "2020",
-    company: "Global Kapital Tech",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      papilla1,
-      papilla2,
-      papilla3,
-      papilla4,
-      papilla5,
-      papilla6,
-      papilla7,
-    ],
-  },
-  {
-    mainImage: partnersPortalMain,
-    id: 13,
-    tags: [
-      projectTags.angularJsTag,
-      projectTags.webPackTag,
-      projectTags.scssTag,
-      projectTags.scrumAgile,
-      projectTags.ci,
-      projectTags.unitTest,
-    ],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Partners Portal",
-    year: "2016 - 2017",
-    company: "Global Kapital FX",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [
-      partnersPortal1,
-      partnersPortal2,
-      partnersPortal3,
-      partnersPortal4,
-      partnersPortal5,
-      partnersPortal6,
-      partnersPortal7,
-      partnersPortal8,
-      partnersPortal9,
-      partnersPortal10,
-      partnersPortal11,
-      partnersPortal12,
-      partnersPortal13,
-      partnersPortal14,
-      partnersPortal15,
-    ],
-  },
   {
     mainImage: proPlanMain,
     id: 14,
@@ -876,42 +988,149 @@ export const projectsData = [
       projectTags.aws,
       projectTags.ci,
       projectTags.scrumAgile,
+      projectTags.designTag,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary: "Third party construction company management SPA",
     links: {
       github: "",
-      screenshots: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1yG1lxj70ZUAczUOUo-BatsmGZ_DEKihm?usp=sharing",
       link: "",
     },
     status: "offline",
     name: "ProPlan",
-    year: "2016",
+    year: "2017",
     company: "ProPlan",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `Third party construction company management SPA 
+      
+      I was asked to lead the technical side of rewiring a legacy web application for ProPlan,
+      using modern technologies like: AWS, NodeJS, ExpressJS, MySQL, ReactJS, ReduxJS, SCSS, Agile Development and Scrum meetings with the project Owner. 
+      I was promised that more junior developers will join the team, and I will be leadning them.
+      I planned the projects structure, and convinced the project owner.
+      I learned and setup the AWS EC2 servers for production and test.
+      Created a Bitbucket repository with CI.
+      setup the basic structure of the backend using NodeJS/ExpressJS/MySQL, I implemented Authentication, basic projects items.
+      then created the frontend side using ReactJS, ReduxJS, to login, create users, and display projects and there details`,
     screenshots: [proPlan1, proPlan2, proPlan3],
   },
   {
     mainImage: rossetaMain,
     id: 15,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
     active: false,
-    summary: "blablabalbla",
+    summary: "Corporate based website for a cookware company",
     links: {
       github: "",
-      screenshots: "",
-      link: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1wvW_PSM1qtHY8dq-zqNeQmztCnfrPZQq?usp=sharing",
+      link: "http://rosetta.com.eg/",
     },
-    status: "offline",
+    status: "online",
     name: "Rosetta",
+    year: "2019",
+    company: "Global Kapital Tech",
+
+    description: `Corporate based website for a cookware company.
+      
+      I was given a poor old designed Corporate website, my task was to redesign it using HTML/SCSS.
+      It has multi languages Arabic and Turkish.
+      I was connecting directly to the company's head office, without my manager interfering`,
+    screenshots: [rosseta1, rosseta2, rosseta3, rosseta4],
+  },
+  {
+    mainImage: trakyaMain,
+    id: 18,
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Corporate based website for a aluminium company",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1NYLBD-o6Uxk3D-12qDdE32qFIACenFoq?usp=sharing",
+      link: "http://alcomin.com/",
+    },
+    status: "online",
+    name: "Trakya",
+    year: "2019",
+    company: "Global Kapital Tech",
+
+    description: `Corporate based website for a aluminium company
+      
+      I was given a poor old designed Corporate website, my task was to redesign it using HTML/SCSS.`,
+    screenshots: [trakya1, trakya2, trakya3],
+  },
+  {
+    mainImage: trustTheProcessMain,
+    id: 19,
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "AI based android APp, generating motivational phrases for users",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1ZQJW3PspabwOVsBy4LMqF_gIMYQTdIb9?usp=sharing",
+      link:
+        "https://play.google.com/store/search?q=instagram%20likes&c=apps&hl=en&gl=US",
+    },
+    status: "online",
+    name: "Trust The Process",
     year: "2020",
     company: "Global Kapital Tech",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [rosseta1, rosseta2, rosseta3, rosseta4],
+    description: `AI based android App, generating motivational phrases for users
+      
+      I worked on the home screen of the project using HTML/SCSS.
+      also created a dashboard with multiple charts to track the application activities, using ReactJS/ReduxJS`,
+    screenshots: [trustTheProcess],
+  },
+  {
+    mainImage: medicalMainImage,
+    id: 9,
+    tags: [
+      projectTags.HtmlCssTag,
+      projectTags.jQueryTag,
+      projectTags.designTag,
+    ],
+    active: false,
+    summary: "Corporate based website for a hair transplant company",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1nWwNz8dEuERk_Jb0MSU5KNaTtMgC4MhK?usp=sharing",
+      link: "",
+    },
+    status: "offline",
+    name: "Istanbul Cosmetic Clinic",
+    year: "2019",
+    company: "Global Kapital Tech",
+    description: `Corporate based website for a hair transplant company
+      
+      This Project was already built using Wordpress, but it was very slow, performing poorly, and had poor design
+      My task was to rewrite the frontend side of it, to make it perform better and more appealing.
+      I used only HTML and SCSS, and connected to the backend endpoints my teammate has created.
+      `,
+    screenshots: [
+      istanbulCosmaticClinic1,
+      istanbulCosmaticClinic2,
+      istanbulCosmaticClinic3,
+      istanbulCosmaticClinic5,
+      istanbulCosmaticClinic6,
+      istanbulCosmaticClinic7,
+    ],
   },
   {
     mainImage: tickermain,
@@ -924,10 +1143,12 @@ export const projectsData = [
       projectTags.mySql,
     ],
     active: false,
-    summary: "blablabalbla",
+    summary:
+      "A Turkish social media website, imitating Facebook with finical benefits for users",
     links: {
       github: "",
-      screenshots: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1Q8j7J6DFxCA3aUJ6GtstSW80fLtUhb9B?usp=sharing",
       link: "",
     },
     status: "offline",
@@ -935,48 +1156,14 @@ export const projectsData = [
     year: "2014 - 2015",
     company: "FIMM",
 
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    description: `A Turkish social media website, imitating Facebook with finical benefits for users.
+      
+      worked on this project as a junior web developer for a startup company called FIMM.
+      We started the project using only pure PHP and MySQL on the backend, and HTML/CSS/JQuery on the frontend. 
+      Later a more expierenced mangers joined the team and divided us into frontend and backend developers.
+      I was chosen to be responsible of the frontend and to to learn AngularJS which was popular in that time.
+      I learned AngularJS and Refactored the JQuery code into AngularJS Code`,
+
     screenshots: [ticker1, ticker2, ticker3, ticker4],
-  },
-  {
-    mainImage: trakyaMain,
-    id: 18,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Trakya",
-    year: "2020",
-    company: "Global Kapital Tech",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [trakya1, trakya2, trakya3],
-  },
-  {
-    mainImage: trustTheProcessMain,
-    id: 19,
-    tags: [projectTags.HtmlCssTag, projectTags.jQueryTag],
-    active: false,
-    summary: "blablabalbla",
-    links: {
-      github: "",
-      screenshots: "",
-      link: "",
-    },
-    status: "offline",
-    name: "Trust The Process",
-    year: "2020",
-    company: "Global Kapital Tech",
-
-    description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    screenshots: [trustTheProcess],
   },
 ];

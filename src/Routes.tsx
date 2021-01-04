@@ -1,5 +1,11 @@
 import React, { ReactElement } from "react";
-import { Switch, Route, Redirect, useLocation } from "react-router-dom";
+import {
+  Switch,
+  HashRouter,
+  Route,
+  Redirect,
+  useLocation,
+} from "react-router-dom";
 import { Home, User } from "@styled-icons/boxicons-regular";
 import { Work } from "@styled-icons/material";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";

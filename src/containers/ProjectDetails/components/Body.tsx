@@ -6,9 +6,28 @@ import { silver, blue, red, green } from "../../../constants/colors";
 import Title from "../../../components/UI/Title/Title";
 import TagsSection from "../../../components/TagsSection/TagsSection";
 import devices from "../../../constants/breakpoints";
+import { Github } from "@styled-icons/boxicons-logos/Github";
+import { PermMedia } from "@styled-icons/material-outlined/PermMedia";
+import { LinkAlt } from "@styled-icons/boxicons-regular/LinkAlt";
+import { QuoteAltRight } from "@styled-icons/boxicons-solid/QuoteAltRight";
 interface Props {
   selectedProjectDetails: ProjectType;
 }
+const GithubIcon = styled(Github)`
+  height: 30px;
+  width: 30px;
+  color: ${blue};
+`;
+const LinkIcon = styled(LinkAlt)`
+  height: 30px;
+  width: 30px;
+  color: ${blue};
+`;
+const MediaIcon = styled(PermMedia)`
+  height: 30px;
+  width: 30px;
+  color: ${blue};
+`;
 const BodyContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -20,10 +39,11 @@ const SectionContainer = styled.div`
   flex-direction: column;
   width: 100%;
 `;
-const BodyText = styled.div`
+const BodyText = styled.p`
   font-size: 14px;
   color: ${silver};
   margin-bottom: 20px;
+  white-space: pre-line;
 `;
 const TwoSectionContainer = styled.div`
   display: grid;
@@ -86,10 +106,44 @@ const InfoContainer = styled.div`
     }
   }
 `;
-
-const Online = () => <p className="online">Online</p>;
-const Offline = () => <p className="offline">Offline</p>;
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a {
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+`;
 export default function Body({ selectedProjectDetails }: Props): ReactElement {
+  const renderLinks = () => {
+    const { links } = selectedProjectDetails;
+    return (
+      <LinksContainer>
+        {links.github !== "" ? (
+          <a href={links.github} target="_blank">
+            <GithubIcon />
+          </a>
+        ) : (
+          ""
+        )}
+        {links.link !== "" ? (
+          <a href={links.link} target="_blank">
+            <LinkIcon />
+          </a>
+        ) : (
+          ""
+        )}
+        {links.screenshots !== "" ? (
+          <a href={links.screenshots} target="_blank">
+            <MediaIcon />
+          </a>
+        ) : (
+          ""
+        )}
+      </LinksContainer>
+    );
+  };
   return (
     <BodyContainer>
       <TwoSectionContainer>
@@ -123,6 +177,10 @@ export default function Body({ selectedProjectDetails }: Props): ReactElement {
       </TwoSectionContainer>
       <Slider screenShots={selectedProjectDetails.screenshots} />
 
+      <SectionContainer>
+        <Title>Links:</Title>
+        {renderLinks()}
+      </SectionContainer>
       <SectionContainer>
         <Title>Description:</Title>
         <BodyText>{selectedProjectDetails.description}</BodyText>

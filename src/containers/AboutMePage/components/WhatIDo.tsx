@@ -40,7 +40,7 @@ export default function WhatIDo({}: Props): ReactElement {
       <span />
       <div>
         <BlueReactLogo />
-        <DescriptionTitle>Front End Development</DescriptionTitle>
+        <DescriptionTitle>FrontEnd Development</DescriptionTitle>
         <WhatIDoDescription>
           My main profession and passion is to develop cutting edge technology
           frontend projects. <br /> I'm always looking forward to learn new
@@ -50,11 +50,11 @@ export default function WhatIDo({}: Props): ReactElement {
       <div>
         <BluePhone />
 
-        <DescriptionTitle>Develop Mobile Apps</DescriptionTitle>
+        <DescriptionTitle>Mobile Apps Development</DescriptionTitle>
         <WhatIDoDescription>
           I have been developing mobile apps recently, using React Native,I
-          developed a very successful android app to my previous company with
-          over 1M downloads. <br />
+          developed a very successful android app with over 1M downloads, and
+          making over 100k $ a month. <br />
           and currently I'm developing a new app related to Instagram.
         </WhatIDoDescription>
       </div>
@@ -63,18 +63,18 @@ export default function WhatIDo({}: Props): ReactElement {
 
         <DescriptionTitle>Designing</DescriptionTitle>
         <WhatIDoDescription>
-          If there is no design is available, I can come up with my own
-          attractive design.
+          I'm not a professional designer, but If there is no design is
+          available, I can come up with my own attractive design.
         </WhatIDoDescription>
       </div>
       <div>
         <BlueNode />
 
-        <DescriptionTitle>Developing in the backend</DescriptionTitle>
-        <p>
+        <DescriptionTitle>Backend Development</DescriptionTitle>
+        <WhatIDoDescription>
           I'm able to develop in the backend using NodeJs and ExpressJs, but I
           have little professional experience
-        </p>
+        </WhatIDoDescription>
       </div>
     </SectionContainer>
   );
