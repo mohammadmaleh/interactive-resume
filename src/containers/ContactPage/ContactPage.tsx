@@ -86,7 +86,7 @@ export default function ContactPage({}: Props): ReactElement {
   const contactsData = [
     {
       id: 0,
-      text: "Sariyer - Istanbul - Turkey",
+      text: "Munich (central), Bavaria, Germany",
       icon: <LocationPin />,
       link: "#",
     },
@@ -102,16 +102,16 @@ export default function ContactPage({}: Props): ReactElement {
     {
       id: 2,
 
-      text: "+90 507 099 0448",
+      text: "+49 155 60718240",
       icon: <TelephoneFill />,
-      link: "tel:+905070990448",
+      link: "tel:+4915560718240",
     },
     {
       id: 3,
 
       text: "Whatsapp",
       icon: <img src={WhatsappIcon} />,
-      link: "https://wa.me/00905070990448",
+      link: "https://wa.me/4915560718240",
     },
   ];
 
@@ -126,7 +126,7 @@ export default function ContactPage({}: Props): ReactElement {
     <PageContainer>
       <MapContainer>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12018.293749082428!2d29.023779267591674!3d41.14383701902091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA4JzM3LjgiTiAyOcKwMDEnNTcuMSJF!5e0!3m2!1sen!2str!4v1606699326937!5m2!1sen!2str"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42523.90717275054!2d11.539532542517866!3d48.13743177498407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sde!4v1700000000000!5m2!1sen!2sde"
           width="100%"
           height="300"
           frameBorder="0"

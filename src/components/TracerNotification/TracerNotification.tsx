@@ -52,11 +52,15 @@ const TracerNotification = (): ReactElement => {
       easing: easings.easeCubic,
     },
   }));
+  
+  useEffect(() => {
+    setMovementProps({ xy: [x, y] });
+  }, [x, y, setMovementProps]);
+  
   const trans1 = (x: number, y: number) =>
     ` scale(1) translate3d(calc(${x}px - ${
       elementWidth / 2
     }px),calc(${y}px - 50px),0)`;
-  setMovementProps({ xy: [x, y] });
   const transitions = useTransition(show, null, {
     from: {
       transform: "scale(0)",

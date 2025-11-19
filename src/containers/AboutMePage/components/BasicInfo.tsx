@@ -30,41 +30,33 @@ export default function BasicInfo({}: Props): ReactElement {
   return (
     <SectionContainer>
       <AboutMeText>
-        I am a frontend developer, passionate about learning and implementing
-        cutting-edge technologies, with 7 years of professional experience
-        working using modern web technologies like React and ExpressJS. Always
-        looking to provide my employers with high performance and attractive web
-        applications.
+        Frontend Engineer with 10+ years of experience architecting React/TypeScript applications. 
+        At CELUS, I helped reduce codebase complexity by 60%, established the company's foundational 
+        design system, and have a proven track record of building scalable solutions across fintech 
+        and hardware engineering domains, with expertise in performance optimization and AI-driven 
+        feature integration.
       </AboutMeText>
       <div>
         <InfoField>
-          <p className="blue-text">Date of Birth:</p>
-          <p>09/01/1988 (33 Years old)</p>
+          <p className="blue-text">Location:</p>
+          <p>Munich (central), Bavaria, Germany</p>
         </InfoField>
         <InfoField>
-          <p className="blue-text">Nationality:</p>
+          <p className="blue-text">Citizenship:</p>
           <p>Syrian</p>
         </InfoField>
         <InfoField>
-          <p className="blue-text">Residence: </p>
-          <p>Tarabya, Istanbul, Turkey</p>
-        </InfoField>
-        <InfoField>
-          <p className="blue-text">Experience: </p>
-          <p>7 Years</p>
-        </InfoField>
-        <InfoField>
           <p className="blue-text">Languages:</p>
-          <p>English (Fluent), Turkish (Intermediate), Arabic(Mother tongue)</p>
+          <p>English (fluent), German (A1)</p>
         </InfoField>
         <InfoField>
-          <p className="blue-text">Marital Status:</p>
-          <p>Single</p>
+          <p className="blue-text">Work Authorization:</p>
+          <p>EU Blue Card holder (renewable), not tied to a single employer, and eligible to change employers in Germany</p>
         </InfoField>
         <InfoField>
           <p className="blue-text">Phone Number: </p>
           <p>
-            <a href="tel:00905070990448">+90 507 099 0448</a>
+            <a href="tel:+4915560718240">+49 155 60718240</a>
           </p>
         </InfoField>
         <InfoField>

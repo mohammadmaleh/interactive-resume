@@ -1,11 +1,10 @@
 import React, { ReactElement, useContext } from "react";
 import styled from "styled-components";
-import profilePicture from "../../assets/main-image.jpg";
+import profilePicture from "../../assets/main-image.jpeg";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
 import { Download } from "@styled-icons/boxicons-regular/Download";
-import Button from "../UI/Button/Button";
 import { white } from "../../constants/colors";
 import ResumeContext from "../../context/resume.context";
 import devices from "../../constants/breakpoints";
@@ -29,11 +28,14 @@ const Container = styled.div`
     display: none;
   }
 `;
-const ProfileImage = styled.img`
+const ProfileImage = styled.div`
   border: 1px solid ${white};
   height: 150px;
   width: 150px;
   border-radius: 170px;
+  background-image: url(${profilePicture});
+  background-size: cover;
+  background-position: 60% center;
 `;
 const Name = styled.p`
   font-size: 2rem;
@@ -90,9 +92,9 @@ function IconContainer(
 export default function BasicInfo({}: Props): ReactElement {
   return (
     <Container data-test="basic-info">
-      <ProfileImage src={profilePicture} />
+      <ProfileImage />
       <Name>MOHAMMAD AL MALEH</Name>
-      <JobDescription>Senior Frontend Developer</JobDescription>
+      <JobDescription>Frontend Engineer</JobDescription>
       <IconsContainer>
         <IconContainer notificationText={"Checkout my Github Account"}>
           <a href="https://github.com/mohammadmaleh" target="_blank">

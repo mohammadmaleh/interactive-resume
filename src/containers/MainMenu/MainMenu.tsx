@@ -19,12 +19,11 @@ const MenuContainer = styled.div`
 `;
 
 const Menu = styled.div`
-  height: 100%;
   background: ${grey};
   border-radius: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px 0;
   align-items: center;
   @media ${devices.mobileL} {

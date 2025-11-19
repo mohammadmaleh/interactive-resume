@@ -2,8 +2,8 @@ import React, { ReactElement, useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { animated, useSpring, useTransition } from "react-spring";
-import { white, darkBlack, blue } from "../../../constants/colors";
+import { animated, useTransition } from "react-spring";
+import { white, darkBlack, blue, silver } from "../../../constants/colors";
 import * as easings from "d3-ease";
 import ResumeContext from "../../../context/resume.context";
 interface MenuIconProps {
@@ -18,9 +18,10 @@ interface IconContainerProps {
 
 const IconContainer = styled.div<IconContainerProps>`
   position: relative;
+  margin: 20px auto;
   cursor: pointer;
   * {
-    color: ${(props) => (props.active ? white : darkBlack)};
+    color: ${(props) => (props.active ? white : silver)};
     z-index: 2;
   }
   min-height: 50px;
@@ -35,6 +36,7 @@ const IconBackground = styled(animated.div)`
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  
   left: 0;
   right: 0;
   text-align: center;

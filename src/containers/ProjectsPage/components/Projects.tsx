@@ -47,6 +47,8 @@ const ProjectImage = styled.div<ProjectImageProps>`
 
   height: 150px;
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 const ProjectTitle = styled.p`
   padding: 5px 10px;

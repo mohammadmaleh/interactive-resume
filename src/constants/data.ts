@@ -188,10 +188,18 @@ import ineractiveResume7 from "../assets/projects/interactive-resume/ineractive-
 import ineractiveResume8 from "../assets/projects/interactive-resume/ineractive-resume8.png";
 import ineractiveResume9 from "../assets/projects/interactive-resume/ineractive-resume9.png";
 import ineractiveResume10 from "../assets/projects/interactive-resume/ineractive-resume10.png";
-import { zip } from "lodash-es";
 
+
+import celusMainImage from "../assets/projects/celus/celus-main-image.svg";
+import celus1 from "../assets/projects/celus/celus1.png";
+import celus2 from "../assets/projects/celus/celus2.png";
+import celus3 from "../assets/projects/celus/celus3.png";
+import celus4 from "../assets/projects/celus/celus4.png";
+import celus5 from "../assets/projects/celus/celus5.png";
+import celus6 from "../assets/projects/celus/celus6.png";
+import celus7 from "../assets/projects/celus/celus7.png";
 export const projectTags = {
-  reactJsTag: "ReactJS",
+  reactJsTag: "ReactJS",  
   jQueryTag: "jQuery",
   HtmlCssTag: "HTML / SCSS",
   angularJsTag: "AngularJS",
@@ -260,131 +268,162 @@ export const testimonialsData = [
 ];
 export const professionalCareerData = [
   {
-    id: 21,
-    duration: "NOV 2020 - Current",
-    companyName: "",
-    position: "Freelancer",
+    id: 1,
+    duration: "AUG 2021 - OCT 2025",
+    companyName: "CELUS, Munich",
+    position: "Frontend Engineer",
     description:
-      "Currently working as a freelancer for my previous company Global Kapital Tech, in addition I'm developing a mobile application for my self ",
+      "CELUS provides an AI-assisted electronics design platform that automatically generates circuit architectures and component lists (CUBOs) for hardware engineers.\n\n"
   },
   {
     id: 2,
-    duration: "FEB 2018 - NOV 2020",
-    companyName: "Global Kapital Tech",
-    position: "Senior Frontend Developer",
+    duration: "JUL 2015 - MAR 2017, rejoined SEP 2017 - MAY 2021",
+    companyName: "Global Kapital Group, Istanbul",
+    position: "Senior Front-End Developer",
     description:
-      "worked with a team of 3 frontend developers mainly on a banking web application. \n" +
-      "we used React/Redux, Scrum, Git, and CI to develop our projects.\n" +
-      "My main responsibilities are to develop and maintain one of three projects, and to communicate directly\n" +
-      "with the design and testing team.\n" +
-      "after 6 months I got chosen to be outsourced to lead the frontend development of a newly formed team\n" +
-      "of 4 members which has a startup vibe.\n" +
-      "Specialized in cryptocurrency-related projects and other smaller projects.",
+      "GKG is a diversified fintech conglomerate. I was part of an engineering team, joined as a mid-level developer, and then got promoted to a senior role. I contributed to multiple high-impact projects across multiple branches.\n\n" ,
   },
   {
     id: 3,
-    duration: "SEP 2017 - JAN 2018",
-    companyName: "ProPlan",
-
-    position: "Lead Web Developer",
-    description: `I established the technical side of a startup company.
-    I started a project that aims to rebuild a legacy construction management system using cutting-edge technologies.
-    `,
+    duration: "APR 2017 - AUG 2017",
+    companyName: "PROPLAN Project, Istanbul",
+    position: "Senior Fullstack Developer",
+    description:
+      "• Launched the creation of the company's new web development branch to modernize an outdated third-party construction project management system. As the sole developer, I established the complete development workflow, from setting up Jira boards and pipelines to managing Bitbucket repositories and defining tasks, to implement the back-end and front-end systems. Delivered a functional MVP within five months using modern technologies at the time, including AWS, Node.js/Express with an ORM for PostgreSQL, React with Redux, and Sass for styling.\n\n" 
   },
   {
     id: 4,
-    duration: "JUL 2015 - AUG 2017",
-    companyName: "Global Kapital FX - Istanbul, Tukey",
-    position: "Frontend Developer",
+    duration: "JAN 2014 - JUN 2015",
+    companyName: "Fimm, Istanbul",
+    position: "Web Developer",
     description:
-      "Worked with a high tech international team of two frontend developers (my team was awarded\n" +
-      "as the best team in the company).\n" +
-      "Mainly maintaining a Forex contracts lifecycle management system (CLM)",
+      "• Built a social media web application from the ground up, handling both frontend (Angular, Less, JQuery) and back-end (PHP, Symfony, MYSQL, RabbitMQ).",
   },
   {
     id: 5,
-    duration: "APR 2014 - JUN 2015",
-    companyName: "FIMM - Istanbul, Turkey",
-    position: "Junior Web Developer",
+    duration: "",
+    companyName: "Freelancing",
+    position: "",
     description:
-      "Worked with a startup company, both on the frontend and backend mainly on a Turkish social\n" +
-      "media website, in addition to some side projects using(AngularJS, PHP / Zend, MySql).",
+      "I have worked on many commercial side projects for local businesses, mostly working on HTML/Sass and contact forms. The most notable one is a frontend application to manage a warehouse, shipping/returning system",
   },
 ];
 export const skillsData = [
   {
-    name: "JavaScript",
-    percentage: 90,
+    name: "JavaScript / TypeScript",
+    percentage: 95,
   },
   {
-    name: "ReactJs",
+    name: "React.js / React Hooks",
+    percentage: 95,
+  },
+  {
+    name: "Redux / State Management",
     percentage: 90,
   },
   {
     name: "React Native",
-    percentage: 60,
-  },
-  {
-    name: "TypeScript",
-    percentage: 70,
-  },
-
-  {
-    name: "Version Control (git)",
     percentage: 70,
   },
   {
-    name: "Unit Testing",
-    percentage: 70,
+    name: "HTML5 / CSS3 / SASS",
+    percentage: 95,
   },
   {
-    name: "Styling (Scss, Styled Components, etc..)",
+    name: "Styled Components / TailwindCSS",
     percentage: 90,
   },
   {
-    name: "Designing",
-    percentage: 60,
+    name: "Testing (Jest, Cypress, RTL)",
+    percentage: 85,
   },
-
   {
-    name: "NodeJs (ExpressJs)",
-    percentage: 50,
+    name: "Git / CI/CD / GitHub Actions",
+    percentage: 85,
+  },
+  {
+    name: "Node.js / Express.js",
+    percentage: 65,
+  },
+  {
+    name: "Agile / Scrum",
+    percentage: 85,
   },
 ];
 export const knowledgeData = [
-  "ReactJs",
+  "React.js",
+  "React Hooks",
   "React Native",
-  "JavaScript",
-  "ES2017",
-  "Jira",
-  "Agile Development",
-  "Version Control Git",
-
-  "WebPack",
-  "Continues Integration",
-  "Jest",
-
-  "CSS",
-  "LESS",
-  "SASS",
-  "SCSS",
+  "TypeScript",
+  "JavaScript (ES6+)",
+  "HTML5",
+  "Node.js",
+  "Express.js",
+  "Redux",
+  "Redux-Toolkit",
+  "Redux Saga",
+  "RESTful APIs",
+  "React Context API",
+  "WebSockets",
+  "CSS3/SASS",
+  "TailwindCSS",
   "Styled Components",
-  "Scrum ",
-  "AWS",
-  "MySQL",
-  "MongoDB",
-  "Web Storm",
-  "VS Code",
-  "SPA",
-  "PhotoShop",
-  "JQuery",
-  "BitBucket",
-  "AngularJS",
-  "Grunt",
-  "Gulp",
+  "Material UI",
+  "Ant Design",
+  "Hero UI",
+  "Jest",
+  "React Testing Library",
+  "Cypress",
+  "End-to-End testing",
+  "Code review",
+  "Documentation",
+  "ESLint",
+  "Prettier",
+  "Git",
+  "GitHub Actions",
+  "Webpack",
+  "Docker",
+  "Storybook",
+  "Figma",
+  "Jira",
+  "Confluence",
+  "Agile (Scrum/Kanban)",
+  "CI/CD",
+  "Responsive design",
+  "Internationalization",
+  "Accessibility (WCAG)",
+  "SEO optimization",
+  "Zod",
 ];
 
 export const projectsData = [
+  {
+    mainImage: celusMainImage,
+    id: 1,
+    tags: [
+      projectTags.reactJsTag,
+      projectTags.reduxJsTag,
+      projectTags.scssTag,
+      projectTags.webPackTag,
+    ],
+    active: false,
+    summary: "AI-assisted electronics design platform",
+    links: {
+      github: "",
+      screenshots:
+        "https://drive.google.com/drive/folders/1hUCwKonzmHcdwKVMEJLKgTZ3zjwNeLKx?usp=sharing",
+      link: "https://www.celus.com/",
+    },
+    status: "online",
+    name: "CELUS",
+    year: "2021",
+    company: "CELUS",
+    description: `AI-assisted electronics design platform
+    
+    CELUS provides an AI-assisted electronics design platform that automatically generates circuit architectures and component lists (CUBOs) for hardware engineers.
+    `,
+    screenshots: [celus1, celus2, celus3, celus4, celus5, celus6, celus7],
+  },
   {
     mainImage: interaudiMainImage,
     id: 8,
